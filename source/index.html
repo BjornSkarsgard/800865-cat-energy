@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
+      <img class="page-header__logo-text logo-text">
+    </a>
+    <nav class="main-nav main-nav--index main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <span class="main-nav__toggle-bar">Меню</span>
+      </button>
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__item-link--active">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="page-header__intro">
+      <div class="intro-container container">
+        <div class="intro__text-block">
+          <h1 class="intro__title title">Функциональное питание для котов</h1>
+          <p class="intro__lead lead">занялся собой? Займись котом!</p>
+        </div>
+      </div>
+      <div class="intro__img">
+        <img class="intro__img--cat" src="#" width="" height="" alt="Фотография кота">
+        <img class="intro__img--food" src="#" alt="Фотография функциональной еды для кота">
+      </div>
+      <div class="intro__link-block">
+        <a class="intro__link button button--intro" href="#">Подобрать программу</a>
+      </div>
+    </section>
+  </header>
+  <main class="page-main__index">
+    <section class="programs">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <div class="programs__container container">
+        <div class="programs__layout">
+          <div class="programs__item programs__item--slim">
+            <div class="programs__inner">
+              <h3 class="programs__item-title">Похудение</h3>
+              <p class="programs__item-desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <div class="programs__item-block">
+                <a class="item-block__link" href="#">Каталог slim</a>
+              </div>
+            </div>
+          </div>
+          <div class="programs__item programs__item--pro">
+            <div class="programs__inner">
+              <h3 class="programs__item-title">Набор массы</h3>
+              <p class="programs__item-desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+                поможет вашему коту нарастить необходимые мышцы!</p>
+              <div class="programs__item-block">
+                <a class="item-block__link" href="#">Каталог pro</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="desc-work">
+      <div class="desc-work__container container">
+        <h3 class="desc-work__title">Как это работает</h3>
+        <div class="desc-work__item">
+          <div class="desc-work__green-box green-box__sheet">
+            <img class="sheet" src="#" alt="лист">
+          </div>
+          <p class="desc-work__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </div>
+        <div class="desc-work__item">
+          <div class="desc-work__green-box green-box__powder">
+            <img class="powder" src="#" alt="пример порошка">
+          </div>
+          <p class="desc-work__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </div>
+        <div class="desc-work__item">
+          <div class="desc-work__green-box green-box__food">
+            <img class="food" src="#" alt="прием пищи">
+          </div>
+          <p class="desc-work__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </div>
+        <div class="desc-work__item">
+          <div class="desc-work__green-box green-box__clock">
+            <img class="clock" src="#" alt="будильник">
+          </div>
+          <p class="desc-work__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </div>
+      </div>
+    </section>
+    <section class="example">
+      <div class="example__container container">
+        <h3 class="example__title">Живой пример</h3>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+          результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__item">
+          <ul class="example__item-stats">
+            <li class="example__stats-value">5 кг</li>
+            <li class="example__stats-mark">Снижение веса</li>
+          </ul>
+          <ul class="example__item-stats">
+            <li class="example__stats-value">60 дней</li>
+            <li class="example__stats-mark">Затрачено времени</li>
+          </ul>
+        </div>
+        <p class="example__price">Затраты на питание: 15 000р руб.</p>
+        <div class="example__slider">
+          <img class="example__slider-before example-image" src="#" alt="толстый кот">
+          <img class="example__slider-after example-image" src="#" alt="худой кот">
+          <div class="example__slider-input">
+            <input class="example__slider-input--before example-input" type="radio" id="example-input-before" name="example-story">
+            <input class="example__slider-input--after example-input" type="radio" id="example-input-after" name="example-story">
+          </div>
+          <div class="example__toggle-control">
+            <label class="toggle__label toggle__label--before" for="example-input-before">Было</label>
+            <label class="toggle__label toggle__label--after" for="example-input-after">Стало</label>
+          </div>
+          <div class="example__toggle-scale"></div>
+          <button class="example__toggle-button" type="button"></button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__cart cart">
+          <h4 class="cart__welcome">Приглашаем к сотрудничеству дилеров!</h4>
+          <p class="cart__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <iframe class="cart__iframe"></iframe>
+        </div>
+        <img class="footer__logo-text logo-text">
+        <div class="footer__social">
+          <ul class="footer__social-items">
+            <li class="social-item link__vk">
+              <a class="social-item__link social-item__link--vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link social-item__link--tw" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link social-item__link--fb" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__link-academy">
+            <a class="footer__link-academy--text" href="#">
+              <img src="#" alt="HTML Academy">
+            </a>
+            <a class="footer__link-academy--logo" href="#">
+              <img src="#" alt="HTML Academy logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+
 </html>
