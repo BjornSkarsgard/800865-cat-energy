@@ -12,12 +12,12 @@ ymaps.ready(init); // карта соберется после загрузки 
         		.add('mapTools', { left: 35, top: 5 }) // Стандартный набор кнопок
         		.add('searchControl'); // Строка с поиском
 	        /* Создаем кастомные метки */
-	        myPlacemark0 = new ymaps.Placemark([59.938638, 30.322893], { // Создаем метку с такими координатами и суем в переменную
+	        myPlacemark0 = new ymaps.Placemark([59.938688, 30.323100], { // Создаем метку с такими координатами и суем в переменную
 	                balloonContent: '<div class="ballon"><img src="img/hh.jpg" class="ll"/><span>Заголовок метки 1</span><br/><p>Немного инфы о том, о сем. Лорем ипсум чото там.</p><img class="close" onclick="myMap.balloon.close()" src="img/close.png"/></div>' // сдесь содержимое балуна в формате html, все стили в css
 	            	}, {
 	            	iconImageHref: 'img/map-pin.png', // картинка иконки
 	            	iconImageSize: [50, 50], // размер иконки
-	            	iconImageOffset: [20, -64], // позиция иконки
+                iconImageOffset: [-25, -50], // позиция иконки
 	                balloonContentSize: [270, 99], // размер нашего кастомного балуна в пикселях
 	                balloonLayout: "default#imageWithContent", // указываем что содержимое балуна кастомная херь
 	              //  balloonImageHref: 'img/ballon1.png', // Картинка заднего фона балуна
