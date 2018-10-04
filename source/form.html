@@ -42,21 +42,25 @@
             <h1 class="form__title">Подбор программы</h1>
             <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <fieldset class="form__info">
+              <div class="form__block-info">
                 <p class="form__name">
                   Имя:*
                   <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
-                  <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик" required>
+                  <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик"
+                    required>
                 </p>
                 <p class="form__weight">
                   Вес (кг):*
                   <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
-                  <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7" required>
+                  <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7"
+                    required>
                 </p>
                 <p class="form__age">
                   Возраст (лет):
                   <label for="nwa-age" class="visually-hidden">Возраст</label>
                   <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
                 </p>
+              </div>
             </fieldset>
             <fieldset class="form__task">
               <legend class="visually-hidden">Ваша цель?</legend>
@@ -74,13 +78,14 @@
               <p class="form__email">
                 E-mail:*
                 <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
-                <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com required>
+                <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com
+                  required>
               </p>
               <p class="form__numb">
                 Телефон:*
                 <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
-                <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90 pattern="[0-9]{11}"
-                  required>
+                <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90
+                  pattern="[0-9]{11}" required>
               </p>
             </fieldset>
             <fieldset class="form__comment">
@@ -95,22 +100,18 @@
               </legend>
               <label class="form__checkbox">
                 <input type="checkbox" name="sugar" id="sugar" checked>
-                <span class="form__checkbox-indicator"></span>
                 Сахарозаменитель
               </label>
               <label class="form__checkbox">
                 <input type="checkbox" name="water" id="water">
-                <span class="form__checkbox-indicator"></span>
                 Питьевая вода
               </label>
               <label class="form__checkbox">
                 <input type="checkbox" name="milk" id="milk">
-                <span class="form__checkbox-indicator"></span>
                 Молоко
               </label>
               <label class="form__checkbox">
                 <input type="checkbox" name="vitamin" id="vitamin">
-                <span class="form__checkbox-indicator"></span>
                 Витамины
               </label>
             </fieldset>
@@ -130,23 +131,25 @@
       </div>
       <img class="footer__logo-text logo-text" src="#" alt="Текстовое название компании">
       <div class="footer__social social">
-        <ul class="social__items">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
+        <div class="social__block">
+          <ul class="social__items">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="social__link-academy">
           <a class="social__link-academy--text" href="#">
             <img src="#" alt="HTML Academy">
