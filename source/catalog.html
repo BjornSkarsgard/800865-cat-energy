@@ -10,49 +10,49 @@
 </head>
 
 <body class="page">
-  <header class="page-header__catalog catalog">
-    <div class="header__container container">
-      <a href="#" class="header__logo">
-        <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
-        <img class="header__logo-text logo-text">
-      </a>
-      <nav class="main-nav main-nav--index main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-bar">Меню</span>
-        </button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="page-main__catalog catalog">
+    <header class="header">
+        <div class="header__container container">
+          <a href="#" class="header__logo">
+            <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
+            <img class="header__logo-text logo-text" src="#" width="" height="" alt="Название компании">
+          </a>
+          <nav class="header__main-nav main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="main-nav__toggle-bar">Меню</span>
+            </button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  <main class="main">
     <section class="catalog-item">
       <div class="catalog-container container">
-        <h1 class="catalog-title">Каталог продукции</h1>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy pro 500 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">500 г</td>
+        <h1 class="catalog-item__title">Каталог продукции</h1>
+        <div class="catalog-item__food food">
+          <img src="#" alt="Фотография еды" class="food__image">
+          <p class="food__title">Cat Energy pro 500 г</p>
+          <table class="food__table">
+            <tr class="food__desc">
+              <td class="food__wt">Объем</td>
+              <td class="food__gr">500 г</td>
+            </tr>
+            <tr class="food__desc">
+              <td class="food__taste">Вкус</td>
+              <td class="food__meat">Курица</td>
             </tr>
             <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Курица</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">700 Р.</td>
+              <td class="food__price">Цена</td>
+              <td class="food__bet">700 Р.</td>
             </tr>
           </table>
           <a class="food-button button" href="#">Заказать</a>
@@ -179,89 +179,89 @@
     </section>
     <section class="sec-goods">
       <div class="sec-goods__container container">
-        <h3>Дополнительные товары</h3>
+        <h2>Дополнительные товары</h2>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Сахарозаменитель</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 упаковка (100 г)</tr>
-            <td class="table__price">100 Р.</td>
+            <tr class="sec-goods__amount">1 упаковка (100 г)</tr>
+            <td class="sec-goods__price">100 Р.</td>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Питьевая вода</p>
           <table class="sec-goods__table">
-            <tr class="table__item">5 литров</tr>
-            <td class="table__price">50 Р.</td>
+            <tr class="sec-goods__amount">5 литров</tr>
+            <td class="sec-goods__price">50 Р.</td>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Молоко</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 литр</tr>
-            <td class="table__price">100 Р.</td>
+            <tr class="sec-goods__amount">1 литр</tr>
+            <td class="sec-goods__price">100 Р.</td>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Витамины</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 упаковка (30 г)</tr>
-            <td class="table__price">300 Р.</td>
+            <tr class="sec-goods__amount">1 упаковка (30 г)</tr>
+            <td class="sec-goods__price">300 Р.</td>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
       </div>
     </section>
-    <section class="bonuce">
-      <div class="bonuce__container container">
+    <section class="bonus">
+      <div class="bonus__container container">
         <a href="#">
-          <div class="bonuce-block">
-            <img class="bonuce-image" src="#" alt="Фотография кота">
-            <h3 class="bonuce-title">Закажите все и получите чехол для кота в подарок!</h3>
+          <div class="bonus__block">
+            <img class="bonus__image" src="#" alt="Фотография кота">
+            <h3 class="bonus__title">Закажите все и получите чехол для кота в подарок!</h3>
           </div>
         </a>
       </div>
     </section>
   </main>
-  <footer class="page-footer__catalog catalog">
-    <div class="footer__container container">
-      <div class="footer__cart cart">
-        <h4 class="cart__welcome">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="cart__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div id="map"></div>
-      </div>
-      <img class="footer__logo-text logo-text">
-      <div class="footer__social">
-        <ul class="footer__social-items">
-          <li class="social-item link__vk">
-            <a class="social-item__link social-item__link--vk" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
+  <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__card">
+          <h4 class="footer__welcome">Приглашаем к сотрудничеству дилеров!</h4>
+          <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div id="map"></div>
+        </div>
+        <img class="footer__logo-text logo-text" src="#" alt="Текстовое название компании">
+        <div class="footer__social social">
+          <ul class="social__items">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+          <div class="social__link-academy">
+            <a class="social__link-academy--text" href="#">
+              <img src="#" alt="HTML Academy">
             </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--tw" href="#">
-              <span class="visually-hidden">Твиттер</span>
+            <a class="social__link-academy--logo" href="#">
+              <img src="#" alt="HTML Academy logo">
             </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--fb" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__link-academy">
-          <a class="footer__link-academy--text" href="#">
-            <img src="#" alt="HTML Academy">
-          </a>
-          <a class="footer__link-academy--logo" href="#">
-            <img src="#" alt="HTML Academy logo">
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

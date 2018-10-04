@@ -10,69 +10,55 @@
 </head>
 
 <body class="page">
-  <header class="page-header__index index">
+  <header class="header">
     <div class="header__container container">
       <a href="#" class="header__logo">
         <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
-        <img class="header__logo-text logo-text">
+        <img class="header__logo-text logo-text" src="#" width="" height="" alt="Название компании">
       </a>
-      <nav class="main-nav main-nav--index main-nav--closed">
+      <nav class="header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="main-nav__toggle-bar">Меню</span>
         </button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active">Главная</a>
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="page-main__index index">
-    <section class="header__intro">
+  <main class="main">
+    <section class="intro">
       <div class="intro-container container">
-        <div class="intro__text-block">
-          <h1 class="intro__title title">Функциональное питание для котов</h1>
-          <p class="intro__lead lead">занялся собой? Займись котом!</p>
-        </div>
-      </div>
-      <div class="intro__img">
-        <img class="intro__img--cat" src="#" width="" height="" alt="Фотография кота">
-        <img class="intro__img--food" src="#" alt="Фотография функциональной еды для кота">
-      </div>
-      <div class="intro__link-block">
-        <a class="intro__link button button--intro" href="#">Подобрать программу</a>
+        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <p class="intro__lead">занялся собой? Займись котом!</p>
+        <img class="intro__img-cat" src="#" width="" height="" alt="Фотография кота">
+        <img class="intro__img-food" src="#" alt="Фотография функциональной еды для кота">
+        <a class="intro__link button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs__container container">
-        <div class="programs__layout">
-          <div class="programs__item programs__item--slim">
-            <div class="programs__inner">
-              <h3 class="programs__item-title">Похудение</h3>
-              <p class="programs__item-desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <div class="programs__item-block">
-                <a class="item-block__link" href="#">Каталог slim</a>
-              </div>
-            </div>
+        <div class="programs__program-selection program-selection">
+          <div class="program-selection__item">
+            <h3 class="program-selection__title">Похудение</h3>
+            <p class="program-selection__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program-selection__link" href="#">Каталог slim</a>
           </div>
-          <div class="programs__item programs__item--pro">
-            <div class="programs__inner">
-              <h3 class="programs__item-title">Набор массы</h3>
-              <p class="programs__item-desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-                поможет вашему коту нарастить необходимые мышцы!</p>
-              <div class="programs__item-block">
-                <a class="item-block__link" href="#">Каталог pro</a>
-              </div>
-            </div>
+          <div class="program-selection__item">
+            <h3 class="program-selection__title">Набор массы</h3>
+            <p class="program-selection__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program-selection__link" href="#">Каталог pro</a>
           </div>
         </div>
       </div>
@@ -81,30 +67,30 @@
     <section class="desc-work">
       <div class="desc-work__container container">
         <h3 class="desc-work__title">Как это работает</h3>
-        <ul class="desc-work__list work-list">
-          <li class="work-list__item">
-            <div class="work-list__green-box green-box__sheet">
-              <img class="sheet" src="#" alt="лист">
+        <ul class="desc-work__list list">
+          <li class="list__item">
+            <div class="list__green-box">
+              <img class="list__sheet" src="#" alt="лист">
             </div>
-            <p class="work-list__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="list__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="work-list__item">
-            <div class="work-list__green-box green-box__powder">
-              <img class="powder" src="#" alt="пример порошка">
+          <li class="list__item">
+            <div class="list__green-box">
+              <img class="list__powder" src="#" alt="пример порошка">
             </div>
-            <p class="work-list__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="list__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="work-list__item">
-            <div class="work-list__green-box green-box__food">
-              <img class="food" src="#" alt="прием пищи">
+          <li class="list__item">
+            <div class="list__green-box">
+              <img class="list__food" src="#" alt="прием пищи">
             </div>
-            <p class="work-list__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="list__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="work-list__item">
-            <div class="work-list__green-box green-box__clock">
-              <img class="clock" src="#" alt="будильник">
+          <li class="list__item">
+            <div class="list__green-box">
+              <img class="list__clock" src="#" alt="будильник">
             </div>
-            <p class="work-list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -131,12 +117,12 @@
           <img class="example__slider-before example-image" src="#" alt="толстый кот">
           <img class="example__slider-after example-image" src="#" alt="худой кот">
           <div class="example__slider-input">
-            <input class="example__slider-input--before example-input" type="radio" id="example-input-before" name="example-story">
-            <input class="example__slider-input--after example-input" type="radio" id="example-input-after" name="example-story">
+            <input class="example__slider-input" type="radio" id="example-input-before" name="example-story">
+            <input class="example__slider-input" type="radio" id="example-input-after" name="example-story">
           </div>
           <div class="example__toggle-control">
-            <label class="toggle__label toggle__label--before" for="example-input-before">Было</label>
-            <label class="toggle__label toggle__label--after" for="example-input-after">Стало</label>
+            <label class="example__toggle-label example__toggle-label--before" for="example-input-before">Было</label>
+            <label class="example__toggle-label example__toggle-label--after" for="example-input-after">Стало</label>
           </div>
           <div class="example__toggle-scale"></div>
           <button class="example__toggle-button" type="button"></button>
@@ -144,37 +130,37 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer__index index">
+  <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__cart cart">
-        <h4 class="cart__welcome">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="cart__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="footer__card">
+        <h4 class="footer__welcome">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <div id="map"></div>
       </div>
-      <img class="footer__logo-text logo-text">
-      <div class="footer__social">
-        <ul class="footer__social-items">
-          <li class="social-item link__vk">
-            <a class="social-item__link social-item__link--vk" href="#">
+      <img class="footer__logo-text logo-text" src="#" alt="Текстовое название компании">
+      <div class="footer__social social">
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--tw" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--fb" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
         </ul>
-        <div class="footer__link-academy">
-          <a class="footer__link-academy--text" href="#">
+        <div class="social__link-academy">
+          <a class="social__link-academy--text" href="#">
             <img src="#" alt="HTML Academy">
           </a>
-          <a class="footer__link-academy--logo" href="#">
+          <a class="social__link-academy--logo" href="#">
             <img src="#" alt="HTML Academy logo">
           </a>
         </div>

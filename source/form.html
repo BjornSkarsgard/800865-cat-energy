@@ -10,13 +10,13 @@
 </head>
 
 <body class="page">
-  <header class="page-header__index index">
+  <header class="header">
     <div class="header__container container">
       <a href="#" class="header__logo">
         <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
-        <img class="header__logo-text logo-text">
+        <img class="header__logo-text logo-text" src="#" width="" height="" alt="Название компании">
       </a>
-      <nav class="main-nav main-nav--index main-nav--closed">
+      <nav class="header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="main-nav__toggle-bar">Меню</span>
         </button>
@@ -34,116 +34,124 @@
       </nav>
     </div>
   </header>
-  <main class="page-main__form form">
+  <main class="main">
     <section class="form-program">
       <div class="form-program__container container">
-        <h1 class="form-program__title">Подбор программы</h1>
-        <p class="form-program__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <div class="form-program__form">
-          <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-            <div class="form__nwa nwa">
-              <p class="nwa-name">
-                Имя:*
-                <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
-                <input id="nwa-name" type="text" name="name" placeholder=Барсик required>
-              </p>
-              <p class="nwa-weight">
-                Вес (кг):*
-                <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
-                <input id="nwa-weight" type="number" name="weight" placeholder=7 required>
-              </p>
-              <p class="nwa-age">
-                Возраст (лет):
-                <label for="nwa-age" class="visually-hidden">Возраст</label>
-                <input id="nwa-age" type="number" name="age" placeholder=7>
-              </p>
-            </div>
-            <div class="form__radio radio">
-              <input class="radio-btn hide" type="radio" id="btn-1" value="Похудение" name="toggle" checked>
-              <input class="radio-btn hide" type="radio" id="btn-2" value="Набор массы" name="toggle">
-              <input class="radio-btn hide" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)" name="toggle">
-              <label class="form__radio--btn" for="btn-1">Похудение</label>
-              <label class="form__radio--btn" for="btn-2">Набор массы</label>
-              <label class="form__radio--btn" for="btn-3">Не знаю (Нужен ваш совет)</label>
-            </div>
-            <div class="form__info info">
-              <h2 class="info-title">Контактные данные (владельца кота)</h2>
-              <p class="info-email">
+        <div class="form-program__form form">
+          <form class="form__start" method="POST" action="https://echo.htmlacademy.ru">
+            <h1 class="form__title">Подбор программы</h1>
+            <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <fieldset class="form__info">
+                <p class="form__name">
+                  Имя:*
+                  <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
+                  <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик" required>
+                </p>
+                <p class="form__weight">
+                  Вес (кг):*
+                  <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
+                  <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7" required>
+                </p>
+                <p class="form__age">
+                  Возраст (лет):
+                  <label for="nwa-age" class="visually-hidden">Возраст</label>
+                  <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
+                </p>
+            </fieldset>
+            <fieldset class="form__task">
+              <legend class="visually-hidden">Ваша цель?</legend>
+              <input class="form__btn hide" type="radio" id="btn-1" value="Похудение" name="toggle" checked>
+              <label class="form__radio form__radio--slim" for="btn-1">Похудение</label>
+              <input class="form__btn hide" type="radio" id="btn-2" value="Набор массы" name="toggle">
+              <label class="form__radio form__radio--pro" for="btn-2">Набор массы</label>
+              <input class="form__btn hide" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)" name="toggle">
+              <label class="form__radio form__radio--advise" for="btn-3">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+            <fieldset class="form__contact">
+              <legend class="form__legend">
+                <h2 class="form__title">Контактные данные (владельца кота)</h2>
+              </legend>
+              <p class="form__email">
                 E-mail:*
                 <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
-                <input id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com required>
+                <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com required>
               </p>
-              <p class="info-numb">
+              <p class="form__numb">
                 Телефон:*
                 <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
-                <input id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90 pattern="[0-9]{11}" required>
+                <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90 pattern="[0-9]{11}"
+                  required>
               </p>
-            </div>
-            <div class="form__comment comment">
-              <h2 class="comment-title">Комментарий</h2>
-              <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-            <div class="form__add add">
-              <h2 class="add-title">Дополнительно</h2>
-              <label class="add-box">
+            </fieldset>
+            <fieldset class="form__comment">
+              <legend class="form__legend">
+                <h2 class="Form__title">Комментарий</h2>
+              </legend>
+              <textarea class="form__area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+            <fieldset class="form__add">
+              <legend class="form__legend">
+                <h2 class="form__title">Дополнительно</h2>
+              </legend>
+              <label class="form__checkbox">
                 <input type="checkbox" name="sugar" id="sugar" checked>
-                <span class="checkbox-indicator"></span>
+                <span class="form__checkbox-indicator"></span>
                 Сахарозаменитель
               </label>
-              <label class="add-box">
+              <label class="form__checkbox">
                 <input type="checkbox" name="water" id="water">
-                <span class="checkbox-indicator"></span>
+                <span class="form__checkbox-indicator"></span>
                 Питьевая вода
               </label>
-              <label class="add-box">
+              <label class="form__checkbox">
                 <input type="checkbox" name="milk" id="milk">
-                <span class="checkbox-indicator"></span>
+                <span class="form__checkbox-indicator"></span>
                 Молоко
               </label>
-              <label class="add-box">
+              <label class="form__checkbox">
                 <input type="checkbox" name="vitamin" id="vitamin">
-                <span class="checkbox-indicator"></span>
+                <span class="form__checkbox-indicator"></span>
                 Витамины
               </label>
-            </div>
-            <button class="form-button button" type="submit" value="Отправить заявку">Отправить заявку</button>
-            <p class="form-desc">* - Обязательные поля</p>
+            </fieldset>
+            <button class="form__button button" type="submit" value="Отправить заявку">Отправить заявку</button>
+            <p class="form__required">* - Обязательные поля</p>
           </form>
         </div>
       </div>
     </section>
   </main>
-  <footer class="page-footer__form form">
+  <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__cart cart">
-        <h4 class="cart__welcome">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="cart__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="footer__card">
+        <h4 class="footer__welcome">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <div id="map"></div>
       </div>
-      <img class="footer__logo-text logo-text">
-      <div class="footer__social">
-        <ul class="footer__social-items">
-          <li class="social-item link__vk">
-            <a class="social-item__link social-item__link--vk" href="#">
+      <img class="footer__logo-text logo-text" src="#" alt="Текстовое название компании">
+      <div class="footer__social social">
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--tw" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--fb" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
         </ul>
-        <div class="footer__link-academy">
-          <a class="footer__link-academy--text" href="#">
+        <div class="social__link-academy">
+          <a class="social__link-academy--text" href="#">
             <img src="#" alt="HTML Academy">
           </a>
-          <a class="footer__link-academy--logo" href="#">
+          <a class="social__link-academy--logo" href="#">
             <img src="#" alt="HTML Academy logo">
           </a>
         </div>
