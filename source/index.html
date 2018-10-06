@@ -5,22 +5,18 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/cart-yandex.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
-  <script src="js/google-cart.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="header">
     <div class="header__container container">
-      <a href="#" class="header__logo">
-        <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
-        <img class="header__logo-text logo-text" src="#" width="" height="" alt="Название компании">
-      </a>
+      <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
+      <button id="menu-btn" class="main-nav__btn-menu" type="button">
+        <div class="main-nav__btn-indicator"></div>
+      </button>
       <nav class="header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-bar">Меню</span>
-        </button>
-        <ul class="main-nav__items">
+        <ul id="menu-list" class="main-nav__items">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
@@ -173,6 +169,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+  <script src="js/google-cart.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
