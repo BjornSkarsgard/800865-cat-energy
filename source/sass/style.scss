@@ -30,7 +30,7 @@ body {
 a {
   font-family: $main-font;
   color: $font-color;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -57,3 +57,6 @@ li {
 @import "visually-hidden/visually-hidden.scss";
 @import "intro/intro.scss";
 @import "program-selection/program-selection.scss";
+@import "list/list.scss";
+@import "example/example.scss";
+@import "footer__card/footer__card.scss";

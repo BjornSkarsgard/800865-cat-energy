@@ -1,8 +1,11 @@
+.program-selection{
+  display: flex;
+  flex-direction: column;
+}
 .program-selection__item {
   background-color: $grey-bg;
   padding: 20px 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -10,23 +13,86 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  margin-left: 50px;
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-bottom: 25px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.program-selection__desc {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444444;
+}
+
+.program-selection__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.program-selection__link::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 11px;
+  left: 110px;
+  background-image: url(/img/icon-right-arrow-long.svg);
+  background-repeat: no-repeat;
+  transition: all ease-in 0.2s;
+}
+
+.program-selection__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  bottom: 13px;
 }
 
 .program-selection__title--slim::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 27px;
+  top: 12px;
   width: 50px;
   height: 50px;
   background-image: url(/img/icon-cat-slim.svg);
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .program-selection__title--slim::after {
   content: "";
   position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: $green-bg;
+  border-radius: 50px;
+}
+
+.program-selection__title--pro::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 25px;
+  width: 65px;
+  height: 50px;
+  background-image: url(/img/icon-cat-pro.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.program-selection__title--pro::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 20px;
   width: 50px;
   height: 50px;
   background-color: $green-bg;
@@ -34,6 +100,4 @@
 }
 
 
-.program-selection__desc {
-  font-family: Arial, Helvetica, sans-serif;
-}
+

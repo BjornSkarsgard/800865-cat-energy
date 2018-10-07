@@ -6,6 +6,7 @@
   margin-bottom: 10px;
 }
 
+
 .main-nav__btn-menu {
   display: block;
   position: absolute;
@@ -44,7 +45,8 @@
 }
 
 .menu-open{
-  display: block;
+  display: flex;
+    flex-direction: column
 }
 
 #menu:checked ~ .main-nav__items {
@@ -61,6 +63,7 @@
 }
 
 .main-nav__link {
+  overflow-wrap: break-word;
   display: block;
   padding: 23px 70px 23px 70px;
 }
