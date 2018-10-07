@@ -38,6 +38,22 @@ li {
   list-style: none;
 }
 
+.button {
+  display: block;
+  color: white;
+  background-color: $green-bg;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 10px 72px 10px 72px;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @import "container/container.scss";
+@import "header__container/header__container.scss";
 @import "main-nav/main-nav.scss";
 @import "visually-hidden/visually-hidden.scss";
+@import "intro/intro.scss";
+@import "program-selection/program-selection.scss";
