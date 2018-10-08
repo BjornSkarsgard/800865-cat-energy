@@ -19,6 +19,10 @@
   justify-content: space-between;
 }
 
+.example__item-stats {
+  display: flex;
+}
+
 .example__stats-value {
   position: relative;
   font-size: 24px;
@@ -29,6 +33,7 @@
   width: 100px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
+  align-items: stretch;
 }
 
 .example__stats-value--kg::after {
