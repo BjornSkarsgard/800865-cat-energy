@@ -1,3 +1,6 @@
+.example {
+  margin-bottom: 8px;
+}
 .example__container {
   background-color: $grey-bg;
 }
@@ -6,12 +9,14 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: 0;
+  margin-top: -1px;
+  margin-bottom: 22px;
 }
 
 .example__text {
   font-family: Arial, Helvetica, sans-serif;
   width: 270px;
+  margin-bottom: 0px;
 }
 
 .example__item {
@@ -34,20 +39,22 @@
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   align-items: stretch;
+  text-transform: uppercase;
 }
 
 .example__stats-value--kg::after {
-  content: "снижеие веса";
+  content: "снижение веса";
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 12px;
   align-items: stretch;
   background-color: $grey-bg;
+  text-transform: lowercase;
   width: 60px;
   padding: 0 10px 0 10px;
   text-align: center;
-  bottom: -20px;
+  bottom: -18px;
   left: 20px;
 }
 
@@ -59,16 +66,19 @@
   line-height: 12px;
   align-items: stretch;
   background-color: $grey-bg;
+  text-transform: lowercase;
   width: 60px;
   padding: 0 10px 0 10px;
   text-align: center;
-  bottom: -20px;
+  bottom: -18px;
   left: 20px;
 }
 
 .example__price {
   text-transform: uppercase;
   text-align: center;
+
+  margin-bottom: 34px;
 }
 
 .example__slider {

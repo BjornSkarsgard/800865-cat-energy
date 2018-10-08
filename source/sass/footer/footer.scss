@@ -15,6 +15,7 @@
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   width: 140px;
+  margin-top: 21px;
 }
 
 .footer__container-map {
@@ -23,7 +24,17 @@
   margin-right: auto;
   background-color: $grey-bg;
   padding-bottom: 33px;
+  background-image: url(/img/bg-map-mobile@1x.png);
+}
 
+.footer__container-map::before {
+  content: "121";
+  position: absolute;
+  background-image: url(/img/map-pin.png);
+  width: 320px;
+  height: 400px;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
 }
 
 #map {

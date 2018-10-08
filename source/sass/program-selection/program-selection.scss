@@ -1,10 +1,11 @@
 .program-selection{
   display: flex;
   flex-direction: column;
+  margin-bottom: 0px;
 }
 .program-selection__item {
   background-color: $grey-bg;
-  padding: 20px 20px;
+  padding: 30px 20px 20px 20px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -13,11 +14,11 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  text-align: left;
   margin-top: 0px;
-  margin-left: 25px;
-  margin-bottom: 25px;
+  margin-left: 71px;
+  margin-bottom: 30px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .program-selection__desc {
@@ -31,7 +32,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .program-selection__link::after {
@@ -40,7 +41,7 @@
   width: 24px;
   height: 24px;
   bottom: 11px;
-  left: 110px;
+  left: 116px;
   background-image: url(/img/icon-right-arrow-long.svg);
   background-repeat: no-repeat;
   transition: all ease-in 0.2s;
@@ -56,8 +57,8 @@
 .program-selection__title--slim::before {
   content: "";
   position: absolute;
-  left: 27px;
-  top: 12px;
+  left: 30px;
+  top: 21px;
   width: 50px;
   height: 50px;
   background-image: url(/img/icon-cat-slim.svg);
@@ -68,8 +69,8 @@
 .program-selection__title--slim::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 24px;
+  left: 22px;
   width: 50px;
   height: 50px;
   background-color: $green-bg;
@@ -79,8 +80,8 @@
 .program-selection__title--pro::before {
   content: "";
   position: absolute;
-  left: 11px;
-  top: 25px;
+  left: 14px;
+  top: 35px;
   width: 65px;
   height: 50px;
   background-image: url(/img/icon-cat-pro.svg);
@@ -91,13 +92,12 @@
 .program-selection__title--pro::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 24px;
+  left: 22px;
   width: 50px;
   height: 50px;
   background-color: $green-bg;
   border-radius: 50px;
 }
-
 
 
