@@ -47,7 +47,7 @@
 }
 
 
-#btn-1:checked ~ .form__radio--slim::before {
+.btn-1:checked ~ .form__radio--slim::before {
   position: absolute;
   content: "";
   left: -35px;
@@ -58,7 +58,7 @@
   border-radius: 10px;
 }
 
-#btn-2:checked ~ .form__radio--pro::before {
+.btn-2:checked ~ .form__radio--pro::before {
   position: absolute;
   content: "";
   left: -35px;
@@ -69,7 +69,7 @@
   border-radius: 10px;
 }
 
-#btn-3:checked ~ .form__radio--advise::before {
+.btn-3:checked ~ .form__radio--advise::before {
   position: absolute;
   content: "";
   left: -35px;
