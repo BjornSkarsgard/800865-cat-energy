@@ -38,6 +38,11 @@ li {
   list-style: none;
 }
 
+fieldset {
+  border: none;
+}
+
+
 .button {
   display: block;
   color: white;
@@ -62,5 +67,6 @@ li {
 @import "food/food.scss";
 @import "sec-goods/sec-goods.scss";
 @import "bonus/bonus.scss";
+@import "form/form.scss";
 @import "footer/footer.scss";
 // @import "footer__card/footer__card.scss";
