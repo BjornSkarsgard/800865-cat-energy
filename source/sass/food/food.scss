@@ -1,0 +1,75 @@
+.food__header {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.food__catalog-item {
+  margin-bottom: 24px;
+}
+
+.food__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.food__desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.food__see-more {
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid $grey-bg;
+  padding-top: 65px;
+}
+
+.food__see-more::before {
+  content: "";
+  position: absolute;
+  background-color: $grey-bg;
+  width: 30px;
+  height: 2px;
+  left: 120px;
+  top: 40px;
+  transform: rotate(90deg);
+}
+
+.food__see-more::after {
+  content: "";
+  position: absolute;
+  background-color: $grey-bg;
+  width: 30px;
+  height: 2px;
+  left: 120px;
+  top: 40px;
+}
+
+.food__title-more {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.food__title-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #444444;
+  text-align: center;
+}
+
+.food__button-more {
+  cursor: pointer;
+  display: block;
+  border: none;
+  background-color: $grey-bg;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Oswald;
+}

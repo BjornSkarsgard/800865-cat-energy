@@ -1,0 +1,25 @@
+.bonus__block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bonus__gift {
+  position: absolute;
+  fill: white;
+  width: 56px;
+  height: 56px;
+  left: 110px;
+  top: 70px;
+}
+
+.bonus__title {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 170px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  position: absolute;
+  top:170px;
+  left: 60px;
+}
