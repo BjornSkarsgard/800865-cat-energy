@@ -3,265 +3,323 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи Catalog</title>
+  <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/cart-yandex.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
-  <script src="js/google-cart.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="page">
-  <header class="page-header__catalog catalog">
+  <header class="header">
     <div class="header__container container">
-      <a href="#" class="header__logo">
-        <img class="header__logo-image logo-image" src="#" width="" height="" alt="Логотип компании">
-        <img class="header__logo-text logo-text">
-      </a>
-      <nav class="main-nav main-nav--index main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-bar">Меню</span>
-        </button>
-        <ul class="main-nav__items">
+      <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
+      <button id="menu-btn" class="main-nav__btn-menu" type="button">
+        <div class="main-nav__btn-indicator"></div>
+      </button>
+      <nav class="header__main-nav main-nav">
+        <ul id="menu-list" class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="page-main__catalog catalog">
-    <section class="catalog-item">
-      <div class="catalog-container container">
-        <h1 class="catalog-title">Каталог продукции</h1>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy pro 500 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">500 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Курица</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">700 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+  <main class="main">
+    <section class="food">
+      <div class="food-container container">
+        <h1 class="food__header">Каталог продукции</h1>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy pro 1000 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">1000 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Курица</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">1000 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy pro 500 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">500 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Рыба</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">700 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy pro 1000 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">1000 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Рыба</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">1000 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy slim 500 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">500 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Гречка</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">400 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy slim 1000 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">1000 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Гречка</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">700 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
-        <div class="catalog__food food">
-          <img src="#" alt="Фотография еды" class="food-image">
-          <p class="food-title">Cat Energy slim 500 г</p>
-          <table class="food-table">
-            <tr class="food-desc">
-              <td class="food-desc__item">Объем</td>
-              <td class="food-desc__item">500 г</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Вкус</td>
-              <td class="food-desc__item">Рис</td>
-            </tr>
-            <tr class="food-desc">
-              <td class="food-desc__item">Цена</td>
-              <td class="food-desc__item">500 Р.</td>
-            </tr>
-          </table>
-          <a class="food-button button" href="#">Заказать</a>
+        <div class="food__catalog-item">
+          <img class="food__img" src="img/chicken-small-mobile@1x.jpg" alt="Фотография еды" class="food__image">
+          <div class="food__item">
+            <table class="food__table">
+              <tr>
+                <td class="food__title">Cat Energy pro 500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__wt">Объем</td>
+                <td class="food__gr">500 г</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__taste">Вкус</td>
+                <td class="food__meat">Курица</td>
+              </tr>
+              <tr class="food__desc">
+                <td class="food__price">Цена</td>
+                <td class="food__bet">700 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="food__button button" href="#">Заказать</a>
         </div>
+
         <div class="food__see-more">
-          <p class="see-more__title">Показать еще 100500 товаров</p>
-          <p class="see-more__desc">На самом деле вкусов гораздо больше!</p>
-          <button type="button" class="see-more__button button">Показать все</button>
+          <p class="food__title-more">Показать еще 100500 товаров</p>
+          <p class="food__title-desc">На самом деле вкусов гораздо больше!</p>
+          <button type="button" class="food__button-more button">Показать все</button>
         </div>
     </section>
     <section class="sec-goods">
       <div class="sec-goods__container container">
-        <h3>Дополнительные товары</h3>
+        <h2 class="sec-goods__header">Дополнительные товары</h2>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Сахарозаменитель</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 упаковка (100 г)</tr>
-            <td class="table__price">100 Р.</td>
+            <tr>
+              <td class="sec-goods__amount">1 упаковка (100 г)</td>
+              <td class="sec-goods__price">100 Р.</td>
+            </tr>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Питьевая вода</p>
           <table class="sec-goods__table">
-            <tr class="table__item">5 литров</tr>
-            <td class="table__price">50 Р.</td>
+            <tr>
+              <td class="sec-goods__amount">5 литров</td>
+              <td class="sec-goods__price">50 Р.</td>
+            </tr>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Молоко</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 литр</tr>
-            <td class="table__price">100 Р.</td>
+            <tr>
+              <td class="sec-goods__amount">1 литр</td>
+              <td class="sec-goods__price">100 Р.</td>
+            </tr>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
         <div class="sec-goods__item">
           <p class="sec-goods__title">Витамины</p>
           <table class="sec-goods__table">
-            <tr class="table__item">1 упаковка (30 г)</tr>
-            <td class="table__price">300 Р.</td>
+            <tr>
+              <td class="sec-goods__amount">1 упаковка (30 г)</td>
+              <td class="sec-goods__price">300 Р.</td>
+            </tr>
           </table>
-          <a href="#" class="table__button button">Заказать</a>
+          <a href="#" class="sec-goods__button button">Заказать</a>
         </div>
       </div>
     </section>
-    <section class="bonuce">
-      <div class="bonuce__container container">
+    <section class="bonus">
+      <div class="bonus__container container">
         <a href="#">
-          <div class="bonuce-block">
-            <img class="bonuce-image" src="#" alt="Фотография кота">
-            <h3 class="bonuce-title">Закажите все и получите чехол для кота в подарок!</h3>
+          <div class="bonus__block">
+              <svg class="bonus__gift" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.5 60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
+                <path class="bonus__gift"
+                  d="M52.3,12.2h-7c0.5-0.7,0.8-1.4,1.1-2.2c0.6-2,0.4-4.1-0.6-5.9c-1-1.8-2.6-3.1-4.6-3.7c-2-0.6-4.1-0.4-5.9,0.6
+                c-3.6,2-6.2,6.1-7.6,9c-1.4-2.9-4-7.1-7.6-9c-3.8-2-8.5-0.6-10.5,3.1c-1.4,2.7-1.2,5.8,0.5,8.1h-7c-1.7,0-3.1,1.4-3.1,3.1v9.4
+                c0,1.7,1.4,3.1,3.1,3.1H4v26.1c0,3.3,2.7,6,6,6h35.5c3.3,0,6-2.7,6-6V27.8h0.8c1.7,0,3.1-1.4,3.1-3.1v-9.4
+                C55.5,13.6,54.1,12.2,52.3,12.2z M36.5,3c1.3-0.7,2.7-0.8,4.1-0.4C41.9,3,43,3.9,43.7,5.2c0.7,1.3,0.8,2.7,0.4,4.1
+                c-0.4,1.2-1.1,2.2-2.2,2.9H29.4C30.5,9.6,33,5,36.5,3z M11.7,5.2C13.2,2.6,16.4,1.6,19,3c3.5,1.9,6,6.6,7.1,9.1H13.5
+                C11.2,10.7,10.4,7.6,11.7,5.2z M26.5,27.8v13.7H6.4V27.8H26.5z M6.4,53.9v-10h20.2v13.7H10C8,57.6,6.4,55.9,6.4,53.9z M45.5,57.6
+                H28.9V43.9h20.2v10C49.1,55.9,47.5,57.6,45.5,57.6z M49.1,41.5H28.9V27.8h20.2V41.5z M53.1,24.7c0,0.4-0.3,0.7-0.7,0.7h-2
+                c0,0,0,0,0,0s0,0,0,0H27.7c0,0,0,0,0,0s0,0,0,0H5.2c0,0,0,0,0,0s0,0,0,0h-2c-0.4,0-0.7-0.3-0.7-0.7v-9.4c0-0.4,0.3-0.7,0.7-0.7h49.2
+                c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
+              </svg>
+            <img class="bonus__image" src="img/gift-photo-mobile@1x.jpg" alt="Фотография кота">
+            <h3 class="bonus__title">Закажите все и получите чехол для кота в подарок!</h3>
           </div>
         </a>
       </div>
     </section>
   </main>
-  <footer class="page-footer__catalog catalog">
-    <div class="footer__container container">
-      <div class="footer__cart cart">
-        <h4 class="cart__welcome">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="cart__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div id="map"></div>
+  <footer class="footer">
+    <div class="footer__container container footer__card-catalog">
+      <div class="footer__card">
+        <h4 class="footer__welcome">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="footer__logo-text logo-text">
-      <div class="footer__social">
-        <ul class="footer__social-items">
-          <li class="social-item link__vk">
-            <a class="social-item__link social-item__link--vk" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--tw" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__link social-item__link--fb" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__link-academy">
-          <a class="footer__link-academy--text" href="#">
-            <img src="#" alt="HTML Academy">
+    </div>
+    <div class="footer__container-map">
+      <div id="map"></div>
+    </div>
+    <div class="footer__container footer__container-bottom container ">
+      <div class="footer__logo">
+      </div>
+      <div class="footer__social social">
+        <div class="social__block">
+          <ul class="social__items">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social__link-academy">
+          <a class="social__link-academy--text" href="#">
+            HTML Academy
           </a>
-          <a class="footer__link-academy--logo" href="#">
-            <img src="#" alt="HTML Academy logo">
+          <a class="social__link-academy--logo" href="#">
+            <svg width="33px" height="45px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
+              />
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+  <script src="js/google-cart.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

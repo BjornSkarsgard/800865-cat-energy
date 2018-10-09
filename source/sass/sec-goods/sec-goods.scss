@@ -1,0 +1,28 @@
+.sec-goods__header {
+  border-top: 1px solid $grey-bg;
+  border-bottom: 1px solid $grey-bg;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.sec-goods__item {
+  border-bottom: 1px solid $grey-bg;
+  padding-bottom: 20px;
+}
+
+.sec-goods__title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.sec-goods__table {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
