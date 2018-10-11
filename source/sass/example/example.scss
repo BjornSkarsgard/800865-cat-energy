@@ -7,21 +7,24 @@
 }
 
 .example__title {
-  margin-bottom: 22px;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+
   margin-top: -1px;
+  margin-bottom: 22px;
 }
 
 .example__text {
   font-family: "Arial", "Helvetica", sans-serif;
+
   width: 270px;
   margin-bottom: 0;
 }
 
 .example__item {
   display: flex;
+
   justify-content: space-between;
 }
 
@@ -30,66 +33,82 @@
 }
 
 .example__stats-value {
-  position: relative;
   font-size: 24px;
-  line-height: 24px;
   font-weight: 400;
-  padding: 15px 10px 15px 10px;
-  text-align: center;
+  line-height: 24px;
+
+  position: relative;
+
   width: 100px;
+  padding: 15px 10px 15px 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+
   border: 1px solid #cdcdcd;
   border-radius: 5px;
+
   align-items: stretch;
-  text-transform: uppercase;
 }
 
 .example__stats-value--kg::after {
-  content: "снижение веса";
-  position: absolute;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  align-items: stretch;
-  background-color: $grey-bg;
-  text-transform: lowercase;
-  width: 60px;
-  padding: 0 10px 0 10px;
-  text-align: center;
+
+  position: absolute;
   bottom: -18px;
   left: 20px;
+
+  width: 60px;
+  padding: 0 10px 0 10px;
+
+  content: "снижение веса";
+  text-align: center;
+  text-transform: lowercase;
+
+  background-color: $grey-bg;
+
+  align-items: stretch;
 }
 
 .example__stats-value--date::after {
-  content: "затрачено времени";
-  position: absolute;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  align-items: stretch;
-  background-color: $grey-bg;
-  text-transform: lowercase;
-  width: 60px;
-  padding: 0 10px 0 10px;
-  text-align: center;
+
+  position: absolute;
   bottom: -18px;
   left: 20px;
+
+  width: 60px;
+  padding: 0 10px 0 10px;
+
+  content: "затрачено времени";
+  text-align: center;
+  text-transform: lowercase;
+
+  background-color: $grey-bg;
+
+  align-items: stretch;
 }
 
 .example__price {
-  text-transform: uppercase;
-  text-align: center;
-
   margin-bottom: 34px;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .example__slider {
   position: relative;
+
   padding-bottom: 35px;
 }
 
 .example__slider-img {
-  margin-left: -20px;
   margin-bottom: 32px;
+  margin-left: -20px;
 }
 
 .example__slider-img--before {
@@ -115,6 +134,7 @@
 .example__toggle-label {
   font-size: 16px;
   line-height: 20px;
+
   text-transform: uppercase;
 }
 
@@ -125,35 +145,43 @@
 
 .example__toggle-scale {
   position: absolute;
-  left: 100px;
   top: 275px;
+  left: 100px;
+
   width: 81px;
   height: 12px;
+
   border: 1px solid #cdcdcd;
   border-radius: 10px;
   background-color: white;
 }
 
 .example__toggle-scale::before {
-  content: "";
   position: absolute;
-  width: 35px;
-  height: 6px;
   top: 3px;
   left: 5px;
+
+  width: 35px;
+  height: 6px;
+
+  content: "";
+  transition: left ease-in 0.2s;
+
   border-radius: 10px;
   background-color: $green-bg;
-  transition: left ease-in 0.2s;
 }
 
 .example-input-after:checked ~ .example__toggle-scale::before {
-  content: "";
   position: absolute;
-  width: 35px;
-  height: 6px;
   top: 3px;
   left: 40px;
+
+  width: 35px;
+  height: 6px;
+
+  content: "";
+  transition: left ease-in 0.2s;
+
   border-radius: 10px;
   background-color: $green-bg;
-  transition: left ease-in 0.2s;
 }

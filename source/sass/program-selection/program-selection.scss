@@ -1,102 +1,128 @@
 .program-selection {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 0;
 }
 
 .program-selection__item {
-  background-color: $grey-bg;
-  padding: 30px 20px 20px 20px;
-  margin-bottom: 20px;
   position: relative;
+
+  margin-bottom: 20px;
+  padding: 30px 20px 20px 20px;
+
+  background-color: $grey-bg;
 }
 
 .program-selection__title {
   font-size: 24px;
-  line-height: 37px;
   font-weight: 400;
-  text-align: left;
+  line-height: 37px;
+
   margin-top: 0;
-  margin-left: 71px;
   margin-bottom: 30px;
+  margin-left: 71px;
+
+  text-align: left;
   text-transform: uppercase;
 }
 
 .program-selection__desc {
   font-family: "Arial", "Helvetica", sans-serif;
-  padding-bottom: 20px;
+
   margin-bottom: 20px;
-  border-bottom: 1px solid #444444;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #444;
 }
 
 .program-selection__link {
   font-size: 16px;
   line-height: 16px;
-  text-transform: uppercase;
+
   margin-bottom: 100px;
+
+  text-transform: uppercase;
 }
 
 .program-selection__link::after {
-  content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
   bottom: 11px;
   left: 116px;
+
+  width: 24px;
+  height: 24px;
+
+  content: "";
+  transition: all ease-in 0.2s;
+
   background-image: url("img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
-  transition: all ease-in 0.2s;
 }
 
 .program-selection__link:hover::after {
-  content: "";
   position: absolute;
-  width: 35px;
   bottom: 13px;
+
+  width: 35px;
+
+  content: "";
 }
 
 .program-selection__title--slim::before {
-  content: "";
   position: absolute;
-  left: 30px;
+  z-index: 1;
   top: 21px;
+  left: 30px;
+
   width: 50px;
   height: 50px;
+
+  content: "";
+
   background-image: url("img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .program-selection__title--slim::after {
-  content: "";
   position: absolute;
   top: 24px;
   left: 22px;
+
   width: 50px;
   height: 50px;
-  background-color: $green-bg;
+
+  content: "";
+
   border-radius: 50px;
+  background-color: $green-bg;
 }
 
 .program-selection__title--pro::before {
-  content: "";
   position: absolute;
-  left: 14px;
+  z-index: 1;
   top: 35px;
+  left: 14px;
+
   width: 65px;
   height: 50px;
+
+  content: "";
+
   background-image: url("img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .program-selection__title--pro::after {
-  content: "";
   position: absolute;
   top: 24px;
   left: 22px;
+
   width: 50px;
   height: 50px;
-  background-color: $green-bg;
+
+  content: "";
+
   border-radius: 50px;
+  background-color: $green-bg;
 }
