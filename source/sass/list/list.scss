@@ -5,35 +5,39 @@
 .list__block {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+
   margin-top: 0;
   padding-top: 0;
+  padding-left: 0;
 }
 
 .list__title {
   font-size: 36px;
-  line-height: 60px;
   font-weight: 400;
-  margin-bottom: 28px;
+  line-height: 60px;
+
   margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .list__item {
   display: flex;
+
   margin-bottom: 20px;
 }
 
 .list__green-box {
   width: 60px;
   height: 60px;
-  background-color: $green-bg;
   margin-right: 20px;
+
+  background-color: $green-bg;
 }
 
 .list__img {
   position: relative;
-  left: 5px;
   top: 5px;
+  left: 5px;
 }
 
 .list__text-block {
@@ -42,7 +46,9 @@
 
 .list__text {
   font-family: "Arial", "Helvetica", sans-serif;
-  color: #444444;
-  margin: 2px 0 0 0;
+
   width: 200px;
+  margin: 2px 0 0 0;
+
+  color: #444;
 }
