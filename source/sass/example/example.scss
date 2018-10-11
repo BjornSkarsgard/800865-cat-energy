@@ -7,19 +7,19 @@
 }
 
 .example__title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 60px;
 
   margin-top: -1px;
   margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
 }
 
 .example__text {
-  font-family: "Arial", "Helvetica", sans-serif;
 
   width: 270px;
   margin-bottom: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .example__item {
@@ -33,64 +33,64 @@
 }
 
 .example__stats-value {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
 
   position: relative;
 
+  align-items: stretch;
+
   width: 100px;
   padding: 15px 10px 15px 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
 
   text-align: center;
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
   border-radius: 5px;
-
-  align-items: stretch;
 }
 
 .example__stats-value--kg::after {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
+
+  content: "снижение веса";
 
   position: absolute;
   bottom: -18px;
   left: 20px;
 
+  align-items: stretch;
+
   width: 60px;
   padding: 0 10px 0 10px;
-
-  content: "снижение веса";
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
   text-transform: lowercase;
 
   background-color: $grey-bg;
-
-  align-items: stretch;
 }
 
 .example__stats-value--date::after {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
+
+  content: "затрачено времени";
 
   position: absolute;
   bottom: -18px;
   left: 20px;
 
+  align-items: stretch;
+
   width: 60px;
   padding: 0 10px 0 10px;
-
-  content: "затрачено времени";
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
   text-transform: lowercase;
 
   background-color: $grey-bg;
-
-  align-items: stretch;
 }
 
 .example__price {
@@ -150,38 +150,38 @@
 
   width: 81px;
   height: 12px;
+  background-color: white;
 
   border: 1px solid #cdcdcd;
   border-radius: 10px;
-  background-color: white;
 }
 
 .example__toggle-scale::before {
+
+  content: "";
   position: absolute;
   top: 3px;
   left: 5px;
 
   width: 35px;
   height: 6px;
-
-  content: "";
-  transition: left ease-in 0.2s;
+  background-color: $green-bg;
 
   border-radius: 10px;
-  background-color: $green-bg;
+  transition: left ease-in 0.2s;
 }
 
 .example-input-after:checked ~ .example__toggle-scale::before {
+
+  content: "";
   position: absolute;
   top: 3px;
   left: 40px;
 
   width: 35px;
   height: 6px;
-
-  content: "";
-  transition: left ease-in 0.2s;
+  background-color: $green-bg;
 
   border-radius: 10px;
-  background-color: $green-bg;
+  transition: left ease-in 0.2s;
 }
