@@ -1,3 +1,7 @@
+.footer {
+  position: relative;
+}
+
 .footer__card {
   display: flex;
 
@@ -33,18 +37,18 @@
   padding-bottom: 33px;
 
   background-color: $grey-bg;
-  background-image: url("img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
 }
 
 .footer__container-map::before {
 
-  content: "121";
+  content: "";
   position: absolute;
 
   width: 320px;
   height: 400px;
 
-  background-image: url("img/map-pin.png");
+  background-image: url("../img/map-pin.png");
   background-repeat: no-repeat;
   background-position: 50% 40%;
 }
@@ -59,7 +63,7 @@
   height: 49px;
   margin-bottom: 20px;
 
-  background-image: url("img/logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: -44px 0;
 }
@@ -97,16 +101,16 @@
 }
 
 .social__link--vk {
-  background-image: url("img/icon-vk-mobile.svg");
+  background-image: url("../img/icon-vk-mobile.svg");
 }
 
 .social__link--inst {
-  background-image: url("img/icon-insta-mobile.svg");
+  background-image: url("../img/icon-insta-mobile.svg");
   background-size: 16px;
 }
 
 .social__link--fb {
-  background-image: url("img/icon-fb-mobile.svg");
+  background-image: url("../img/icon-fb-mobile.svg");
   background-position: 0 50%;
 }
 

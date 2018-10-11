@@ -1,13 +1,9 @@
-.example {
-  margin-bottom: 8px;
-}
-
 .example__container {
+  margin-bottom: 8px;
   background-color: $grey-bg;
 }
 
 .example__title {
-
   margin-top: -1px;
   margin-bottom: 22px;
   font-weight: 400;
@@ -16,8 +12,7 @@
 }
 
 .example__text {
-
-  width: 270px;
+  width: 95%;
   margin-bottom: 0;
   font-family: "Arial", "Helvetica", sans-serif;
 }
@@ -33,7 +28,6 @@
 }
 
 .example__stats-value {
-
   position: relative;
 
   align-items: stretch;
@@ -52,7 +46,6 @@
 }
 
 .example__stats-value--kg::after {
-
   content: "снижение веса";
 
   position: absolute;
@@ -73,7 +66,6 @@
 }
 
 .example__stats-value--date::after {
-
   content: "затрачено времени";
 
   position: absolute;
@@ -94,7 +86,7 @@
 }
 
 .example__price {
-  margin-bottom: 34px;
+
 
   text-align: center;
   text-transform: uppercase;
@@ -102,33 +94,56 @@
 
 .example__slider {
   position: relative;
-
-  padding-bottom: 35px;
+  margin-top: -20px;
+  padding-bottom: 17px;
 }
 
 .example__slider-img {
   margin-bottom: 32px;
-  margin-left: -20px;
+  // margin-left: -20px;
 }
 
 .example__slider-img--before {
-  display: none;
+  width: 0;
+  height: 0;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 
 .example__slider-img--after {
-  display: none;
+  width: 0;
+  height: 0;
+  background-image: url("../img/after-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 
 .example__slider-input {
   display: none;
 }
 
-.example-input-before:checked ~ .example__slider-img--before {
+.example__input--before:checked ~ .example__slider-img--before {
   display: block;
+  width: 100%;
+  height: 258px;
+  transition: width ease-in 0.3s;
 }
 
-.example-input-after:checked ~ .example__slider-img--after {
+
+
+.example__input--after:checked ~ .example__slider-img--after {
   display: block;
+  width: 100%;
+  height: 240px;
+  transition: width ease-in 0.3s;
+}
+
+.example__toggle-control {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin-left: 40px;
 }
 
 .example__toggle-label {
@@ -138,16 +153,7 @@
   text-transform: uppercase;
 }
 
-.example__toggle-label--before {
-  margin-right: 115px;
-  margin-left: 44px;
-}
-
 .example__toggle-scale {
-  position: absolute;
-  top: 275px;
-  left: 100px;
-
   width: 81px;
   height: 12px;
   background-color: white;
@@ -157,12 +163,10 @@
 }
 
 .example__toggle-scale::before {
-
   content: "";
   position: absolute;
-  top: 3px;
-  left: 5px;
-
+  top: 7px;
+  left: 60px;
   width: 35px;
   height: 6px;
   background-color: $green-bg;
@@ -171,12 +175,12 @@
   transition: left ease-in 0.2s;
 }
 
-.example-input-after:checked ~ .example__toggle-scale::before {
-
+.example__input--after:checked
+  ~ .example__toggle-control
+  .example__toggle-scale::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 40px;
+  left: 100px;
 
   width: 35px;
   height: 6px;
