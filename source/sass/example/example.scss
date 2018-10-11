@@ -128,8 +128,6 @@
   transition: width ease-in 0.3s;
 }
 
-
-
 .example__input--after:checked ~ .example__slider-img--after {
   display: block;
   width: 100%;
@@ -175,9 +173,7 @@
   transition: left ease-in 0.2s;
 }
 
-.example__input--after:checked
-  ~ .example__toggle-control
-  .example__toggle-scale::before {
+.example__input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
   content: "";
   position: absolute;
   left: 100px;
