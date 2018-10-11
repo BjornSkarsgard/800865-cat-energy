@@ -18,6 +18,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
   font-family: $main-font;
   color: $font-color;
 }
@@ -40,7 +41,7 @@ fieldset {
 .button {
   display: block;
   margin-right: auto;
-  padding: 11px 72px 11px 72px;
+  padding: 4% 25% 4% 25%;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

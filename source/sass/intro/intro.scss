@@ -1,17 +1,22 @@
 .intro-container {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .intro {
-  margin-bottom: 22px;
+  margin-bottom: 7%;
+  position: relative;
+}
+
+.intro__img-food-tablet {
+  display: none;
 }
 
 .intro__title {
-
   margin-top: 0;
-  margin-bottom: 25px;
-  padding-top: 27px;
+  margin-bottom: 8.8%;
+  padding-top: 9.6%;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -22,8 +27,7 @@
 }
 
 .intro__lead {
-
-  margin-bottom: 29px;
+  margin-bottom: 11%;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -36,4 +40,46 @@
 
 .intro__link {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-container {
+    background-image: none;
+  }
+  .intro__title {
+    margin-top: 27px;
+    margin-bottom: 40px;
+    margin-left: 87px;
+    padding: 0 200px 0 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .intro__lead {
+    margin-bottom: 20px;
+    padding: 0 0 0 88px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .intro__img-food {
+    display: none;
+  }
+
+  .intro__img-food-tablet {
+    display: block;
+  }
+
+  .intro__link {
+    position: absolute;
+    top: 229px;
+    left: 119px;
+    padding: 16px 29px 16px 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
