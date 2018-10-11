@@ -1,6 +1,6 @@
 .food__header {
-  font-size: 36px;
   font-weight: 400;
+  font-size: 36px;
   line-height: 60px;
 }
 
@@ -9,15 +9,15 @@
 }
 
 .food__title {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
 }
 
 .food__desc {
-  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
 
   color: #444;
 }
@@ -27,12 +27,14 @@
 
   padding-top: 65px;
 
-  cursor: pointer;
-
   border-top: 1px solid $grey-bg;
+
+  cursor: pointer;
 }
 
 .food__see-more::before {
+
+  content: "";
   position: absolute;
   top: 40px;
   left: 120px;
@@ -40,21 +42,19 @@
   width: 30px;
   height: 2px;
 
-  content: "";
-  transform: rotate(90deg);
-
   background-color: $grey-bg;
+  transform: rotate(90deg);
 }
 
 .food__see-more::after {
+
+  content: "";
   position: absolute;
   top: 40px;
   left: 120px;
 
   width: 30px;
   height: 2px;
-
-  content: "";
 
   background-color: $grey-bg;
 }
@@ -68,8 +68,8 @@
 }
 
 .food__title-desc {
-  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
 
   text-align: center;
 
@@ -77,15 +77,15 @@
 }
 
 .food__button-more {
-  font-family: "Oswald", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
 
   display: block;
-
-  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Helvetica", sans-serif;
 
   color: #444;
-  border: none;
   background-color: $grey-bg;
+  border: none;
+
+  cursor: pointer;
 }

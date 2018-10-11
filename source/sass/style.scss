@@ -1,17 +1,17 @@
 @font-face {
+  font-weight: 500;
   font-family: "Oswald";
+  font-style: normal;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: 400;
   font-family: "Oswald";
+  font-style: normal;
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
     url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 
 $main-font: "Oswald", "arial", serif;
@@ -20,17 +20,17 @@ $green-bg: #65a93c;
 $grey-bg: #f2f2f2;
 
 body {
-  font-family: $main-font;
-  color: $font-color;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: $main-font;
+  color: $font-color;
 }
 
 a {
+  font-weight: 400;
   font-family: $main-font;
   color: $font-color;
-  font-weight: 400;
   text-decoration: none;
 }
 
@@ -45,15 +45,15 @@ fieldset {
 
 .button {
   display: block;
-  color: white;
-  background-color: $green-bg;
+  margin-right: auto;
+  padding: 11px 72px 11px 72px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  padding: 11px 72px 11px 72px;
-  margin-right: auto;
   text-align: center;
+  color: white;
   text-transform: uppercase;
+  background-color: $green-bg;
 }
 
 @import "container/container.scss";
