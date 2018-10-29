@@ -12,14 +12,14 @@
 }
 
 .main-nav__btn-menu {
-  position: absolute;
 
-  display: block;
+  display: inline-block;
 
-  width: 8%;
-  height: 5%;
-  margin-top: -14%;
-  margin-left: 86%;
+  width: 20px;
+  height: 20px;
+  margin-top: 6%;
+  float: right;
+  margin-right: 25px;
   background-color: rgb(255, 255, 255);
 
   border: 0;
