@@ -51,9 +51,10 @@
     background-image: none;
   }
   .intro__title {
+    width: 500px;
     margin-top: 27px;
     margin-bottom: 40px;
-    margin-left: 87px;
+    margin-left: 12.3%;
     padding: 0 200px 0 0;
     font-size: 60px;
     line-height: 60px;
@@ -63,7 +64,7 @@
 
   .intro__lead {
     margin-bottom: 20px;
-    padding: 0 0 0 88px;
+    padding: 0 0 0 12.4%;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -76,12 +77,14 @@
 
   .intro__img-food-tablet {
     display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .intro__link {
     position: absolute;
     top: 229px;
-    left: 119px;
+    left: 15.5%;
     padding: 16px 29px 16px 25px;
     font-size: 20px;
     line-height: 20px;

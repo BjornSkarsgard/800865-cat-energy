@@ -1,5 +1,6 @@
 .example__container {
-  margin-bottom: 8px;
+  padding-bottom: 10px;
+  
   background-color: $grey-bg;
 }
 
@@ -104,8 +105,8 @@
 
 .example__slider {
   position: relative;
-  margin-top: 10px;
-  padding-bottom: 27px;
+  margin-top: 0;
+  padding-bottom: 18px;
 }
 
 .example__slider-img {
@@ -164,7 +165,8 @@
   justify-content: space-around;
   align-items: center;
   width: 215px;
-  margin-left: 35px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 25px;
   padding-bottom: 8px;
 }
@@ -212,8 +214,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    position: relative;
+    margin-bottom: 81px;
+  }
+
   .example__container {
-    margin-bottom: 8px;
+    margin-bottom: -10px;
     background-color: white;
   }
   
@@ -228,7 +235,7 @@
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-family: "Arial", "Helvetica", sans-serif;
   }
   
@@ -364,6 +371,7 @@
     height: 550px;
     opacity: 1;
     transition: opacity ease-in 0.3s;
+    margin-bottom: 32px;
   }
   
   .example__input--after:checked ~ .example__slider-img--after {
@@ -377,51 +385,66 @@
   .example__toggle-control {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 200px;
-    margin-left: 40px;
+    margin-right: auto;
+    width: 80.5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -29px;
   }
   
   .example__toggle-label {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
   
     text-transform: uppercase;
   }
   
   .example__toggle-scale {
-    width: 81px;
-    height: 12px;
-    background-color: white;
+    width: 80%;
+    height: 6px;
+    background-color: #cdcdcd;
   
-    border: 1px solid #cdcdcd;
+    border: none;
     border-radius: 10px;
   }
   
   .example__toggle-scale::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: 60px;
-    width: 35px;
-    height: 6px;
+    top: -6px;
+    // left: 55px;
+    left: 9.5%;
+    width: 8px;
+    height: 8px;
     background-color: $green-bg;
-  
-    border-radius: 10px;
-    transition: left ease-in 0.2s;
+    border: 12px solid white;
+    box-shadow: 0 0 1px 1px #cdcdcd;
+    border-radius: 50%;
+    transition: left ease-in 0.3s;
   }
   
   .example__input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
     content: "";
     position: absolute;
-    left: 100px;
-  
-    width: 35px;
-    height: 6px;
+    top: -6px;
+    // left: 55px;
+    left: 85%;
+    width: 8px;
+    height: 8px;
     background-color: $green-bg;
-  
-    border-radius: 10px;
-    transition: left ease-in 0.2s;
+    border: 12px solid white;
+    box-shadow: 0 0 1px 1px #cdcdcd;
+    border-radius: 50%;
+    transition: left ease-in 0.3s;
+  }
+
+  .example__container-full {
+    position: absolute;
+    bottom: -42px;
+    width: 100%;
+    height: 462px;
+    background-color: #e9e9e9;
   }
 }

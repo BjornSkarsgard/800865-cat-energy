@@ -9,7 +9,7 @@
   position: relative;
 
   margin-bottom: 18px;
-  padding: 10.4% 7% 8% 7%;
+  padding: 29px 19px 22px 19px;
 
   background-color: $grey-bg;
 }
@@ -130,7 +130,7 @@
 @media (min-width: $tablet-width) {
   .program-selection__item {
     margin-bottom: 30px;
-    padding-bottom: 59px;
+    padding: 74px 47px 60px 50px;
   }
 
   .program-selection__title {
@@ -147,7 +147,8 @@
     // width: 372px;
     margin-left: 1px;
     margin-bottom: 3px;
-    padding: 0 270px 53px 0;
+    padding: 0 0 53px 0;
+    width: 55%;
   }
 
   .program-selection__link {
@@ -160,7 +161,7 @@
 
   .program-selection__title--slim::before {
     top: 80px;
-    left: 475px;
+    left: 67.1%;
     
   
     width: 195px;
@@ -169,7 +170,7 @@
 
   .program-selection__title--slim::after {
     top: 93px;
-    left: 446px;
+    left: 63%;
   
     width: 200px;
     height: 200px;
@@ -177,8 +178,8 @@
 
   .program-selection__title--pro::before {
 
-    top: 138px;
-    left: 412px;
+    top: 135px;
+    left: 58.2%;
   
     width: 268px;
     height: 268px;
@@ -187,8 +188,8 @@
   
   .program-selection__title--pro::after {
   
-    top: 94px;
-    left: 448px;
+    top: 91px;
+    left: 63.1%;
   
     width: 200px;
     height: 200px;
