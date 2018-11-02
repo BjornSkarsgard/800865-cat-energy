@@ -160,3 +160,111 @@
     font-family: $main-font; 
   }
 }
+
+@media (min-width: $desktop-width) {
+  .list {
+    margin: 43px 0 0px 80px;
+    padding-bottom: 7px;
+    border-bottom: none;
+  }
+  
+  .list__block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  
+  .list__title {
+  
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    margin-bottom: 83px;
+    margin-top: 50px;
+  }
+  
+  .list__green-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: $green-bg;
+  }
+  
+  .list__img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+  
+  
+  .list__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+    margin: 2px 0 0px 0;
+    font-family: "Arial", "Helvetica", sans-serif;
+  
+    color: #444444;
+  }
+
+  .list__text--one::after {
+    content: "1";
+    position: absolute;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -41px;
+    left: 118px;
+    z-index: -1;
+    font-weight: 400;
+    font-family: $main-font; 
+  }
+
+  .list__text--two::after {
+    content: "2";
+    position: absolute;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -39px;
+    left: 111px;
+    z-index: -1;
+    font-family: $main-font; 
+  }
+  .list__text--three::after {
+    content: "3";
+    position: absolute;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -37px;
+    left: 113px;
+    z-index: -1;
+    font-family: $main-font; 
+  }
+  .list__text--four::after {
+    content: "4";
+    position: absolute;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    top: -39px;
+    left: 113px;
+    z-index: -1;
+    font-family: $main-font; 
+  }
+}
