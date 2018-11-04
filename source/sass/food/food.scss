@@ -2,24 +2,91 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
+  margin-top: 16px;
 }
 
 .food__catalog-item {
   margin-bottom: 24px;
+  // box-shadow: 0px 0px 1px 1px red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+  
+}
+
+.food__img-block {
+  width: 50%;
+}
+
+.food__img {
+  width: 99%;
+}
+
+.food__item {
+  width: 50%;
+  margin-right: 0;
 }
 
 .food__title {
   font-weight: 400;
+  width: 54%;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
+
+.food__table {
+  margin-top: 0;
+}
+
 
 .food__desc {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   font-family: "Arial", "Helvetica", sans-serif;
-
   color: #444444;
+}
+
+.food__wt {
+  padding: 0;
+  padding-right: 57px;
+}
+
+.food__gr {
+  text-align: right;
+  padding: 0;
+}
+
+.food__taste {
+  padding: 0;
+}
+
+.food__meat {
+  text-align: right;
+  padding: 0;
+}
+
+.food__price {
+  padding: 0;
+}
+
+.food__bet {
+  text-align: right;
+  padding: 0;
+}
+
+
+.food__button {
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  margin-top: -2px;
+  padding: 4% 25% 3% 25%;
+
 }
 
 .food__see-more {
@@ -36,8 +103,8 @@
 
   content: "";
   position: absolute;
-  top: 40px;
-  left: 120px;
+  top: 37px;
+  left: 125px;
 
   width: 30px;
   height: 2px;
@@ -50,8 +117,8 @@
 
   content: "";
   position: absolute;
-  top: 40px;
-  left: 120px;
+  top: 37px;
+  left: 125px;
 
   width: 30px;
   height: 2px;
@@ -62,7 +129,9 @@
 .food__title-more {
   font-size: 16px;
   line-height: 20px;
-
+  margin-top: 11px;
+  margin-left: 2px;
+  margin-bottom: 7px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -70,9 +139,9 @@
 .food__title-desc {
   font-size: 12px;
   font-family: "Arial", "Helvetica", sans-serif;
-
+  margin-bottom: 20px;
   text-align: center;
-
+  margin-top: 0;
   color: #444444;
 }
 
@@ -82,7 +151,7 @@
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Helvetica", sans-serif;
-
+  width: 100%;
   color: #444444;
   background-color: $grey-bg;
   border: none;

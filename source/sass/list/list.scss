@@ -163,7 +163,7 @@
 
 @media (min-width: $desktop-width) {
   .list {
-    margin: 43px 0 0px 80px;
+    margin: 0;
     padding-bottom: 7px;
     border-bottom: none;
   }
@@ -180,7 +180,7 @@
   }
   
   .list__title {
-  
+    margin-left: 30px;
     margin-top: 0;
     margin-bottom: 22px;
     font-weight: 400;
@@ -192,7 +192,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 324px;
+    width: 245px;
     margin-bottom: 83px;
     margin-top: 50px;
   }

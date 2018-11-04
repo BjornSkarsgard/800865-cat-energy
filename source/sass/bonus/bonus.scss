@@ -1,8 +1,14 @@
+.bonus {
+  margin-bottom: 36px;
+}
+
 .bonus__image {
   width: 100%;
   height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
 }
 
 .bonus__block {
@@ -13,19 +19,18 @@
 
 .bonus__gift {
   position: absolute;
-  top: 70px;
-  left: 110px;
-
-  width: 56px;
-  height: 56px;
+  top: 26%;
+  left: 39%;
+  width: 65px;
+  height: 60px;
 
   fill: white;
 }
 
 .bonus__title {
-  width: 170px;
-  padding-top: 150px;
-  padding-left: 50px;
+  padding-top: 188px;
+    padding-left: 50px;
+    padding-right: 50px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
