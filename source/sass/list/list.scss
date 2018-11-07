@@ -5,35 +5,39 @@
 .list__block {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+
   margin-top: 0;
   padding-top: 0;
+  padding-left: 0;
 }
 
 .list__title {
+
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 400;
-  margin-bottom: 28px;
-  margin-top: 0;
 }
 
 .list__item {
   display: flex;
+
   margin-bottom: 20px;
 }
 
 .list__green-box {
   width: 60px;
   height: 60px;
-  background-color: $green-bg;
   margin-right: 20px;
+
+  background-color: $green-bg;
 }
 
 .list__img {
   position: relative;
-  left: 5px;
   top: 5px;
+  left: 5px;
 }
 
 .list__text-block {
@@ -41,8 +45,230 @@
 }
 
 .list__text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: #444444;
-  margin: 2px 0 0 0;
+
   width: 200px;
+  margin: 2px 0 0 0;
+  font-family: "Arial", "Helvetica", sans-serif;
+
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .list {
+    margin: 15px 0 0 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $grey-bg;
+  }
+
+  .list__block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .list__title {
+
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    margin-top: 50px;
+    margin-bottom: 83px;
+  }
+
+  .list__green-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: $green-bg;
+  }
+
+  .list__img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+
+
+  .list__text {
+    width: 250px;
+    margin: 2px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    color: #444444;
+  }
+
+  .list__text--one::after {
+    content: "1";
+    position: absolute;
+    top: -41px;
+    left: 118px;
+    z-index: -1;
+    font-weight: 400;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--two::after {
+    content: "2";
+    position: absolute;
+    top: -39px;
+    left: 111px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--three::after {
+    content: "3";
+    position: absolute;
+    top: -37px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--four::after {
+    content: "4";
+    position: absolute;
+    top: -39px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list {
+    margin: 0;
+    padding-bottom: 7px;
+    border-bottom: none;
+  }
+
+  .list__block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .list__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .list__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    margin-top: 50px;
+    margin-bottom: 83px;
+  }
+
+  .list__green-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: $green-bg;
+  }
+
+  .list__img {
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+
+
+  .list__text {
+    width: 250px;
+    margin: 2px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    color: #444444;
+  }
+
+  .list__text--one::after {
+    content: "1";
+    position: absolute;
+    top: -41px;
+    left: 118px;
+    z-index: -1;
+    font-weight: 400;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--two::after {
+    content: "2";
+    position: absolute;
+    top: -39px;
+    left: 111px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--three::after {
+    content: "3";
+    position: absolute;
+    top: -37px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
+
+  .list__text--four::after {
+    content: "4";
+    position: absolute;
+    top: -39px;
+    left: 113px;
+    z-index: -1;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: $main-font;
+    color: #f2f2f2;
+  }
 }

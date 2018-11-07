@@ -1,6 +1,12 @@
+.footer {
+  position: relative;
+}
+
 .footer__card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 7px;
 }
 
 .footer__card-catalog {
@@ -8,104 +14,484 @@
 }
 
 .footer__welcome {
+
   width: 140px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
+
   text-transform: uppercase;
 }
 
 .footer__adress {
-  font-family: "Arial", "Helvetica", sans-serif;
-  line-height: 20px;
+
   width: 140px;
   margin-top: 21px;
+  line-height: 20px;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.footer__adress-city {
+  margin-top: -15px;
 }
 
 .footer__container-map {
-  width: 320px;
-  margin-left: auto;
+  width: 100%;
   margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 0;
+
   background-color: $grey-bg;
-  padding-bottom: 33px;
-  background-image: url("img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
 }
 
 .footer__container-map::before {
-  content: "121";
+
+  content: "";
   position: absolute;
-  background-image: url("img/map-pin.png");
-  width: 320px;
+
+  width: 100%;
   height: 400px;
-  background-position: 50% 40%;
+
+  background-image: url("../img/map-pin.png");
   background-repeat: no-repeat;
+  background-position: 50% 40%;
 }
 
 .footer__map {
   width: 100%;
-  height: 360px;
-  // margin-bottom: 25px;
+  height: 367px;
+}
+
+.footer__container-bottom {
+  padding-top: 25px;
+  background-color: $grey-bg;
 }
 
 .footer__logo {
   width: 280px;
   height: 49px;
-  background-image: url("img/logo-mobile.svg");
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: -44px 0;
-  margin-bottom: 20px;
-}
-
-.footer__container-bottom {
-  background-color: $grey-bg;
 }
 
 .social__items {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #d9d9d9;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+
+  justify-content: center;
   align-self: center;
+
   padding: 20px 0 20px 0;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .social__item {
   display: flex;
-  margin-left: 17px;
+
   margin-right: 17px;
+  margin-left: 17px;
 }
 
 .social__link {
   width: 22px;
   height: 22px;
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social__link--vk {
-  background-image: url("img/icon-vk-mobile.svg");
+  background-image: url("../img/icon-vk-mobile.svg");
 }
 
 .social__link--inst {
-  background-image: url("img/icon-insta-mobile.svg");
+  background-image: url("../img/icon-insta-mobile.svg");
   background-size: 16px;
 }
 
 .social__link--fb {
-  background-image: url("img/icon-fb-mobile.svg");
-  background-position: 0% 50%;
+  background-image: url("../img/icon-fb-mobile.svg");
+  background-position: 0 50%;
 }
 
 .social__link-academy {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
 
 .social__link-academy--text {
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: #666666;
   font-weight: 400;
   font-size: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+
+  color: #666666;
+}
+
+
+@media (min-width: $tablet-width) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 34px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .footer__card-catalog {
+    background-color: $grey-bg;
+  }
+
+  .footer__welcome {
+    width: 140px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    word-wrap: normal;
+  }
+
+  .footer__adress {
+    width: 170px;
+    margin-top: 24px;
+    margin-right: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    text-align: right;
+  }
+
+  .footer__adress-city {
+    margin-top: 20px;
+  }
+
+  .footer__container-map {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0;
+    background-color: $grey-bg;
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+
+  .footer__container-map::before {
+
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 396px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+  }
+
+  .footer__map {
+    width: 100%;
+    height: 396px;
+  }
+
+  .footer__container-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 51px;
+    background-color: $grey-bg;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    width: 250px;
+    height: 48px;
+    margin-top: 1px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -116px 0;
+  }
+
+  .footer__social {
+    display: flex;
+  }
+
+  .social__block {
+    margin-right: 110px;
+    margin-left: 10px;
+  }
+
+  .social__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-self: center;
+    margin-top: 6px;
+
+    padding: 0 0 20px 11px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .social__item {
+    display: flex;
+
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .social__link {
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .social__link--vk {
+    background-image: url("../img/icon-vk-mobile.svg");
+    background-size: 33px;
+  }
+
+  .social__link--inst {
+    margin-top: 1px;
+    margin-left: 2px;
+    background-image: url("../img/icon-insta-mobile.svg");
+    background-size: 23px;
+  }
+
+  .social__link--fb {
+    margin-top: 1px;
+    margin-left: 4px;
+    background-image: url("../img/icon-fb-mobile.svg");
+    background-position: 0 50%;
+    background-size: 15px;
+  }
+
+  .social__link-academy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -26px;
+    margin-left: -1px;
+  }
+
+  .social__link-academy--text {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    color: #666666;
+  }
+
+  .social__link-academy--logo {
+    margin-top: -3px;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__card {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 495px;
+    margin-top: 95px;
+    margin-bottom: 34px;
+    margin-left: 40px;
+    padding-top: 39px;
+    padding-right: 0;
+    padding-left: 76px;
+    background-color: white;
+  }
+
+  .footer__card-catalog {
+    background-color: $grey-bg;
+  }
+
+  .footer__welcome {
+    width: 140px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    word-wrap: normal;
+  }
+
+  .footer__adress {
+    width: 170px;
+    margin-top: 24px;
+    margin-right: 75px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    text-align: left;
+  }
+
+  .footer__adress-city {
+    margin-top: 20px;
+  }
+
+  .footer__container-map {
+    width: 100%;
+    height: 395px;
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-left: auto;
+    padding-bottom: 0;
+    background-color: $grey-bg;
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+
+  .footer__container-map::before {
+
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 396px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+  }
+
+  .footer__map {
+    width: 100%;
+    height: 396px;
+  }
+
+  .footer__container-bottom--desk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: $grey-bg;
+  }
+
+  .footer__container-bottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+    padding-top: 51px;
+    background-color: none;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    width: 250px;
+    height: 48px;
+    margin-top: 1px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -116px 0;
+  }
+
+  .footer__social {
+    display: flex;
+  }
+
+  .social__block {
+    margin-right: 110px;
+    margin-left: 10px;
+  }
+
+  .social__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-self: center;
+    margin-top: 6px;
+
+    padding: 0 0 20px 11px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .social__item {
+    display: flex;
+
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .social__link {
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .social__link--vk {
+    background-image: url("../img/icon-vk-mobile.svg");
+    background-size: 33px;
+  }
+
+  .social__link--inst {
+    margin-top: 1px;
+    margin-left: 2px;
+    background-image: url("../img/icon-insta-mobile.svg");
+    background-size: 23px;
+  }
+
+  .social__link--fb {
+    margin-top: 1px;
+    margin-left: 4px;
+    background-image: url("../img/icon-fb-mobile.svg");
+    background-position: 0 50%;
+    background-size: 15px;
+  }
+
+  .social__link-academy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -26px;
+    margin-left: -1px;
+  }
+
+  .social__link-academy--text {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Arial", "Helvetica", sans-serif;
+
+    color: #666666;
+  }
+
+  .social__link-academy--logo {
+    margin-top: -3px;
+    margin-left: 16px;
+  }
 }

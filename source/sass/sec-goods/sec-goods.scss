@@ -1,19 +1,29 @@
+.sec-goods {
+  margin-bottom: 37px;
+}
+
 .sec-goods__header {
-  border-top: 1px solid $grey-bg;
-  border-bottom: 1px solid $grey-bg;
+  margin-bottom: 13px;
+
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 34px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400;
+  border-top: 1px solid $grey-bg;
+  border-bottom: 1px solid $grey-bg;
 }
 
 .sec-goods__item {
+  margin-top: 12px;
+  padding-bottom: 17px;
+
   border-bottom: 1px solid $grey-bg;
-  padding-bottom: 20px;
 }
 
 .sec-goods__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
@@ -21,8 +31,26 @@
 }
 
 .sec-goods__table {
-  font-family: "Arial", "Helvetica", sans-serif;
+  width: 102%;
+  margin-bottom: 14px;
+  margin-left: -3px;
   font-size: 14px;
   line-height: 14px;
+  font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
+}
+
+.sec-goods__amount {
+  padding: 0;
+}
+
+.sec-goods__price {
+  padding: 0;
+  text-align: right;
+}
+
+.sec-goods__button {
+  padding: 4% 25% 3.6% 25%;
+  font-size: 16px;
+  line-height: 20px;
 }
