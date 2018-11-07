@@ -31,33 +31,33 @@
 }
 
 .form__nwa {
+  width: 100%;
+  margin-left: 15px;
   padding: 14px 15px 15px 15px;
   color: #444444;
-  margin-left: 15px;
-  width: 100%;
   border: 1px solid #e6e6e6;
 }
 
 .form__title {
+  display: inline-block;
+  padding: 0 22px 0 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  padding: 0 22px 0 0;
-  background-color: white;
-  display: inline-block;
   text-transform: none;
+  background-color: white;
 }
 
 .form__desc {
   font-size: 14px;
-  
+
   text-transform: uppercase;
 }
 
 .form__task {
-  border-top: 1px solid $grey-bg;
   margin: 0;
   padding: 0;
+  border-top: 1px solid $grey-bg;
   border-bottom: 1px solid $grey-bg;
 }
 
@@ -81,8 +81,8 @@
 
   content: "";
   position: absolute;
-  left: -40px;
   top: -5px;
+  left: -40px;
   width: 28px;
   height: 28px;
 
@@ -133,8 +133,8 @@
 }
 
 .form__contact {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .form__comment {
@@ -143,11 +143,11 @@
 }
 
 .form__area {
-  padding: 14px 15px;
   width: 100%;
   min-height: 148px;
-  resize:none;
+  padding: 14px 15px;
   border: 1px solid #e6e6e6;
+  resize: none;
 }
 
 .form__add {
@@ -156,33 +156,28 @@
 }
 
 .form__add-block {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding-left: 0;
 }
 
-
 .form__checkbox {
-  margin-bottom: 20px;
-}
-
-.form__checkbox {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
-  padding-left: 45px;
   width: 200px;
   margin-bottom: 24px;
-  margin-left: 0px;
+  margin-left: 0;
+  padding-left: 45px;
 }
 
 .form__checkbox::after {
 
   content: "";
   position: absolute;
+  left: 0;
   width: 30px;
-  left: 0px;
   height: 30px;
   border: 1px solid #cfcfcf;
 }
@@ -193,12 +188,12 @@
   position: absolute;
   top: -4px;
   left: 10px;
-  transform: rotate(42deg);
   width: 11px;
   height: 20px;
   border: 2px solid $green-bg;
-  border-left: none;
   border-top: none;
+  border-left: none;
+  transform: rotate(42deg);
 }
 
 .water:checked ~ .form__checkbox--water::before {
@@ -207,12 +202,12 @@
   position: absolute;
   top: -4px;
   left: 10px;
-  transform: rotate(42deg);
   width: 11px;
   height: 20px;
   border: 2px solid $green-bg;
-  border-left: none;
   border-top: none;
+  border-left: none;
+  transform: rotate(42deg);
 }
 
 .milk:checked ~ .form__checkbox--milk::before {
@@ -221,12 +216,12 @@
   position: absolute;
   top: -4px;
   left: 10px;
-  transform: rotate(42deg);
   width: 11px;
   height: 20px;
   border: 2px solid $green-bg;
-  border-left: none;
   border-top: none;
+  border-left: none;
+  transform: rotate(42deg);
 }
 
 .vitamin:checked ~ .form__checkbox--vitamin::before {
@@ -235,24 +230,24 @@
   position: absolute;
   top: -4px;
   left: 10px;
-  transform: rotate(42deg);
   width: 11px;
   height: 20px;
   border: 2px solid $green-bg;
-  border-left: none;
   border-top: none;
+  border-left: none;
+  transform: rotate(42deg);
 }
 
 .form__button {
   display: block;
+  width: 100%;
   margin-right: auto;
-  font-family: $main-font;
   padding: 3.7% 20% 3.7% 20%;
   font-weight: 400;
-  text-align: center;
   font-size: 16px;
   line-height: 20px;
-  width: 100%;
+  font-family: $main-font;
+  text-align: center;
   border: none;
 }
 
@@ -263,10 +258,10 @@
 .form__greenline::before {
   content: "";
   position: absolute;
+  top: 35px;
+  left: 30px;
+  z-index: -1;
   width: 90%;
   height: 2px;
-  left: 30px;
-  top: 35px;
-  z-index: -1;
   background-color: $green-bg;
 }
