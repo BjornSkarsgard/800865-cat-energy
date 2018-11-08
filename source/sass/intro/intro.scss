@@ -102,7 +102,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-bottom: 26px;
+    margin-bottom: 68px;
   }
 
   .intro__desk-green::before {
@@ -111,7 +111,7 @@
     top: -128px;
     right: 1px;
     z-index: -1;
-    width: 48.4%;
+    width: 50%;
     height: 697px;
     background-color: $green-bg;
     background-image: url("../img/index-background-desktop@1x.jpg");
@@ -128,7 +128,7 @@
     position: relative;
     width: 500px;
     margin-bottom: 270px;
-    margin-left: 49px;
+    margin-left: 19px;
   }
 
   .intro__title {

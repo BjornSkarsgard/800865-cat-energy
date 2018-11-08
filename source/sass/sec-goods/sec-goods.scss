@@ -54,3 +54,183 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .sec-goods {
+    position: relative;
+    margin-bottom: 68px;
+  }
+
+  .sec-goods__header {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-right: 36px;
+    padding-bottom: 80px;
+    padding-left: 37px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: white;
+    border-top: none;
+    border-bottom: 1px solid $grey-bg;
+  }
+
+  .sec-goods__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 26px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 38px;
+    border-bottom: 1px solid $grey-bg;
+  }
+
+  .sec-goods__title {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  .sec-goods__table {
+    width: auto;
+    margin-bottom: 14px;
+    margin-left: -3px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #444444;
+  }
+
+  .sec-goods__amount {
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sec-goods__price {
+    padding: 0;
+    padding-left: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .sec-goods__button {
+    width: 100%;
+    padding: 2% 25% 1.2% 25%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sec-goods__greenline::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: $green-bg;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sec-goods {
+    position: relative;
+    margin-bottom: 68px;
+  }
+
+  .sec-goods__block {
+    display: block;
+  }
+
+  .sec-goods__header {
+    position: relative;
+    left: -37px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-right: 36px;
+    padding-bottom: 80px;
+    padding-left: 36px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: white;
+    border-top: none;
+    border-bottom: 1px solid $grey-bg;
+  }
+
+  .sec-goods__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 26px;
+    padding-right: 0;
+    padding-bottom: 27px;
+    padding-left: 0;
+    border-bottom: 1px solid $grey-bg;
+  }
+
+  .sec-goods__title {
+    width: 26.7%;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  .sec-goods__table {
+    width: 23.9%;
+    margin-bottom: 14px;
+    margin-left: -3px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #444444;
+  }
+
+  .sec-goods__amount {
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sec-goods__price {
+    padding: 0;
+    padding-left: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .sec-goods__button {
+    width: 20.1%;
+    padding: 2% 2.5% 1.2% 2.5%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sec-goods__greenline::before {
+    content: "";
+    position: absolute;
+    top: 73px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: $green-bg;
+  }
+}
