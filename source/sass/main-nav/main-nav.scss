@@ -19,11 +19,11 @@
 .main-nav__btn-menu {
 
   display: inline-block;
+  float: right;
 
   width: 20px;
   height: 20px;
   margin-top: 6%;
-  float: right;
   margin-right: 25px;
   background-color: rgb(255, 255, 255);
 
@@ -94,8 +94,8 @@
   }
 
   .energy-logo__img-tablet {
-    display: block;
     position: relative;
+    display: block;
     width: 170px;
     margin-top: 4px;
     margin-right: 62px;
@@ -150,8 +150,8 @@
 
   .energy-logo__img-desktop {
     display: block;
-    margin-left: 40px;
     margin-top: 39px;
+    margin-left: 10px;
   }
 
 
@@ -165,8 +165,8 @@
     justify-content: space-between;
     width: 480px;
     margin-top: 72px;
+    margin-right: 9px;
     margin-left: 0;
-    margin-right: 38px;
   }
 
   .main-nav__item {
@@ -179,17 +179,35 @@
     padding: 0;
     font-size: 20px;
     line-height: 25px;
-    text-transform: uppercase;
     color: white;
+    text-transform: uppercase;
+  }
+
+  .main-nav__link--catalog {
+    padding: 0;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
+    text-transform: uppercase;
   }
 
   .main-nav__link--active::after {
     content: " ";
     position: absolute;
-    top: 33px;
-    left: -1px;
+    top: 29px;
+    left: 0;
     width: 100%;
     height: 2px;
     background-color: white;
+  }
+
+  .main-nav__link--active-green::after {
+    content: " ";
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #65a93c;
   }
 }
