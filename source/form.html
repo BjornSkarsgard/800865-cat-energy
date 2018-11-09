@@ -13,6 +13,8 @@
   <header class="header">
     <div class="header__container container">
       <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
+      <img class="energy-logo__img-tablet" src="img/logo-tablet.svg" alt="Cat Energy" width="185" height="=70">
+      <img class="energy-logo__img-desktop" src="img/logo-desktop.svg" alt="Cat Energy" width="202" height="=59">
       <button id="menu-btn" class="main-nav__btn-menu" type="button">
         <div class="main-nav__btn-indicator"></div>
       </button>
@@ -41,40 +43,42 @@
 
           <h1 class="form__header">Подбор программы</h1>
           <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <fieldset class="form__info">
-            <div class="form__block-info">
-              <p class="form__name form__p">
-                Имя:*
-                <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
-                <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик"
-                  required>
-              </p>
-              <p class="form__weight form__p">
-                Вес&nbsp(кг):*
-                <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
-                <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7"
-                  required>
-              </p>
-              <p class="form__age form__p">
-                Возраст&nbsp(лет):
-                <label for="nwa-age" class="visually-hidden">Возраст</label>
-                <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="form__task">
-            <legend class="visually-hidden">Ваша цель?</legend>
-            <div class="form__task-block">
-              <input class="form__btn btn-1 visually-hidden" type="radio" id="btn-1" value="Похудение" name="toggle"
-                checked>
-              <label class="form__radio form__radio--slim" for="btn-1">Похудение</label>
-              <input class="form__btn btn-2 visually-hidden" type="radio" id="btn-2" value="Набор массы" name="toggle">
-              <label class="form__radio form__radio--pro" for="btn-2">Набор массы</label>
-              <input class="form__btn btn-3 visually-hidden" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)"
-                name="toggle">
-              <label class="form__radio form__radio--advise" for="btn-3">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+          <div class="form__desk-block">
+            <fieldset class="form__info">
+              <div class="form__block-info">
+                <p class="form__name form__p">
+                  Имя:*
+                  <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
+                  <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик"
+                    required>
+                </p>
+                <p class="form__weight form__p">
+                  Вес&nbsp(кг):*
+                  <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
+                  <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7"
+                    required>
+                </p>
+                <p class="form__age form__p">
+                  Возраст&nbsp(лет):
+                  <label for="nwa-age" class="visually-hidden">Возраст</label>
+                  <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__task">
+              <legend class="visually-hidden">Ваша цель?</legend>
+              <div class="form__task-block">
+                <input class="form__btn btn-1 visually-hidden" type="radio" id="btn-1" value="Похудение" name="toggle"
+                  checked>
+                <label class="form__radio form__radio--slim" for="btn-1">Похудение</label>
+                <input class="form__btn btn-2 visually-hidden" type="radio" id="btn-2" value="Набор массы" name="toggle">
+                <label class="form__radio form__radio--pro" for="btn-2">Набор массы</label>
+                <input class="form__btn btn-3 visually-hidden" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)"
+                  name="toggle">
+                <label class="form__radio form__radio--advise" for="btn-3">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
         </div>
 
 
@@ -87,18 +91,20 @@
             </div>
           </legend>
           <div class="form__container container">
-            <p class="form__email form__p">
-              E-&nbspmail:*
-              <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
-              <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com
-                required>
-            </p>
-            <p class="form__numb form__p">
-              Телефон:*
-              <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
-              <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90
-                pattern="[0-9]{11}" required>
-            </p>
+            <div class="form__desk-block">
+              <p class="form__email form__p">
+                E-&nbspmail:*
+                <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
+                <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com
+                  required>
+              </p>
+              <p class="form__numb form__p">
+                Телефон:*
+                <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
+                <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90
+                  pattern="[0-9]{11}" required>
+              </p>
+            </div>
           </div>
         </fieldset>
 
