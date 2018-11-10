@@ -121,9 +121,10 @@
   background-size: 320px;
   opacity: 0;
   transition: opacity ease-in 0.3s;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/before-mobile@2x.png");
-    background-size: 320px
+    background-size: 320px;
   }
 }
 
@@ -138,9 +139,10 @@
   background-size: 320px;
   opacity: 0;
   transition: opacity ease-in 0.3s;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/after-mobile@2x.png");
-    background-size: 320px
+    background-size: 320px;
   }
 }
 
@@ -355,9 +357,10 @@
     background-size: 690px;
     opacity: 0;
     transition: opacity ease-in 0.3s;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-tablet@2x.png");
-      background-size: 690px
+      background-size: 690px;
     }
   }
 
@@ -373,9 +376,10 @@
     background-size: 690px;
     opacity: 0;
     transition: opacity ease-in 0.3s;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-tablet@2x.png");
-      background-size: 690px
+      background-size: 690px;
     }
   }
 
@@ -617,9 +621,10 @@
     background-size: 690px;
     opacity: 0;
     transition: opacity ease-in 0.3s;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@2x.png");
-      background-size: 690px
+      background-size: 690px;
     }
   }
 
@@ -635,9 +640,10 @@
     background-size: 690px;
     opacity: 0;
     transition: opacity ease-in 0.3s;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@2x.png");
-      background-size: 690px
+      background-size: 690px;
     }
   }
 
