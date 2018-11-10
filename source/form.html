@@ -21,13 +21,13 @@
       <nav class="header__main-nav main-nav">
         <ul id="menu-list" class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--form" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--form" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--form main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -110,12 +110,10 @@
 
         <fieldset class="form__comment">
           <legend class="form__legend form__greenline">
-
-              <div class="form__container container">
-                <h2 class="form__title">Комментарий</h2>
-
+            <div class="form__container container">
+              <h2 class="form__title">Комментарий</h2>
             </div>
-          </legend>
+        </legend>
           <div class="form__container container">
             <textarea class="form__area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
@@ -123,13 +121,11 @@
 
 
         <fieldset class="form__add">
-          <legend class="form__legend">
-            <div class="form__greenline">
-              <div class="form__container container">
-                <h2 class="form__title">Дополнительно</h2>
-              </div>
+          <legend class="form__legend form__greenline">
+            <div class="form__container container">
+              <h2 class="form__title">Дополнительно</h2>
             </div>
-          </legend>
+        </legend>
           <div class="form__container container">
             <div class="form__add-block">
               <input class="checkbox sugar visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
@@ -140,13 +136,15 @@
               <label class="form__checkbox form__checkbox--milk" for="milk">Молоко</label>
               <input class="checkbox vitamin visually-hidden" type="checkbox" name="vitamin" id="vitamin">
               <label class="form__checkbox form__checkbox--vitamin" for="vitamin">Витамины</label>
+              <button class="form__button button" type="submit" value="Отправить заявку">Отправить заявку</button>
+          <p class="form__required">* - Обязательные поля</p>
             </div>
           </div>
         </fieldset>
-        <div class="form__container container">
+        <!-- <div class="form__container container">
           <button class="form__button button" type="submit" value="Отправить заявку">Отправить заявку</button>
           <p class="form__required">* - Обязательные поля</p>
-        </div>
+        </div> -->
       </form>
 
       <!-- </div> -->

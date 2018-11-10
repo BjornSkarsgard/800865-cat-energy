@@ -73,14 +73,16 @@
 }
 
 .footer__logo {
-  width: 280px;
+  display: inline-block;
+  width: 129px;
   height: 49px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  background-image: url("../img/logo-mobile.svg");
+  margin-top: 11px;
+  margin-right: 25%;
+  margin-bottom: 0;
+  margin-left: 25%;
+  background-image: url(../img/logo-footer.svg);
   background-repeat: no-repeat;
-  background-position: -44px 0;
+  background-position: 0 0;
 }
 
 .social__items {
@@ -225,15 +227,15 @@
 
   .footer__logo {
     display: inline-block;
-    width: 250px;
+    width: 129px;
     height: 48px;
-    margin-top: 1px;
+    margin-top: 13px;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 2px;
-    background-image: url("../img/logo-tablet.svg");
+    margin-left: 0;
+    background-image: url(../img/logo-footer.svg);
     background-repeat: no-repeat;
-    background-position: -116px 0;
+    background-position: 0 0;
   }
 
   .footer__social {
@@ -241,7 +243,7 @@
   }
 
   .social__block {
-    margin-right: 110px;
+    margin-right: -12px;
     margin-left: 10px;
   }
 
@@ -339,6 +341,7 @@
 
   .footer__card-catalog {
     background-color: $grey-bg;
+    padding-top: 0;
   }
 
   .footer__welcome {
@@ -369,7 +372,7 @@
     width: 100%;
     height: 395px;
     margin-right: auto;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     margin-left: auto;
     padding-bottom: 0;
     background-size: cover;
@@ -413,24 +416,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1220px;
-    padding-top: 51px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+    padding-top: 58px;
+    padding-left: 17.9%;
+    padding-right: 17.9%;
     background-color: none;
   }
 
   .footer__logo {
     display: inline-block;
-    width: 250px;
-    height: 48px;
-    margin-top: 1px;
+    width: 129px;
+    height: auto;
+    margin-top: 11px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    background-image: url("../img/logo-desktop.svg");
+    background-image: url(../img/logo-footer.svg);
     background-repeat: no-repeat;
-    background-position: -115px 0;
+    background-position: 0 0;
   }
 
   .footer__social {
@@ -438,7 +441,7 @@
   }
 
   .social__block {
-    margin-right: 110px;
+    margin-right: -12px;
     margin-left: 10px;
   }
 
