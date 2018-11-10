@@ -13,19 +13,21 @@
   <header class="header">
     <div class="header__container container">
       <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
+      <img class="energy-logo__img-tablet" src="img/logo-tablet.svg" alt="Cat Energy" width="185" height="=70">
+      <img class="energy-logo__img-desktop" src="img/logo-desktop.svg" alt="Cat Energy" width="202" height="=59">
       <button id="menu-btn" class="main-nav__btn-menu" type="button">
         <div class="main-nav__btn-indicator"></div>
       </button>
       <nav class="header__main-nav main-nav">
         <ul id="menu-list" class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--form" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--form" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--form main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -41,77 +43,77 @@
 
           <h1 class="form__header">Подбор программы</h1>
           <p class="form__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <fieldset class="form__info">
-            <div class="form__block-info">
-              <p class="form__name form__p">
-                Имя:*
-                <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
-                <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик"
-                  required>
-              </p>
-              <p class="form__weight form__p">
-                Вес&nbsp(кг):*
-                <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
-                <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7"
-                  required>
-              </p>
-              <p class="form__age form__p">
-                Возраст&nbsp(лет):
-                <label for="nwa-age" class="visually-hidden">Возраст</label>
-                <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="form__task">
-            <legend class="visually-hidden">Ваша цель?</legend>
-            <div class="form__task-block">
-              <input class="form__btn btn-1 visually-hidden" type="radio" id="btn-1" value="Похудение" name="toggle"
-                checked>
-              <label class="form__radio form__radio--slim" for="btn-1">Похудение</label>
-              <input class="form__btn btn-2 visually-hidden" type="radio" id="btn-2" value="Набор массы" name="toggle">
-              <label class="form__radio form__radio--pro" for="btn-2">Набор массы</label>
-              <input class="form__btn btn-3 visually-hidden" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)"
-                name="toggle">
-              <label class="form__radio form__radio--advise" for="btn-3">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+          <div class="form__desk-block">
+            <fieldset class="form__info">
+              <div class="form__block-info">
+                <p class="form__name form__p">
+                  Имя:*
+                  <label for="nwa-name" class="visually-hidden">Имя (обязательно)</label>
+                  <input class="form__nwa form__nwa--name" id="nwa-name" type="text" name="name" placeholder="Барсик"
+                    required>
+                </p>
+                <p class="form__weight form__p">
+                  Вес&nbsp(кг):*
+                  <label for="nwa-weight" class="visually-hidden">Вес (обязательно)</label>
+                  <input class="form__nwa form__nwa--weight" id="nwa-weight" type="number" name="weight" placeholder="7"
+                    required>
+                </p>
+                <p class="form__age form__p">
+                  Возраст&nbsp(лет):
+                  <label for="nwa-age" class="visually-hidden">Возраст</label>
+                  <input class="form__nwa form__nwa--age " id="nwa-age" type="number" name="age" placeholder="7">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__task">
+              <legend class="visually-hidden">Ваша цель?</legend>
+              <div class="form__task-block">
+                <input class="form__btn btn-1 visually-hidden" type="radio" id="btn-1" value="Похудение" name="toggle"
+                  checked>
+                <label class="form__radio form__radio--slim" for="btn-1">Похудение</label>
+                <input class="form__btn btn-2 visually-hidden" type="radio" id="btn-2" value="Набор массы" name="toggle">
+                <label class="form__radio form__radio--pro" for="btn-2">Набор массы</label>
+                <input class="form__btn btn-3 visually-hidden" type="radio" id="btn-3" value="Не знаю (Нужен ваш совет)"
+                  name="toggle">
+                <label class="form__radio form__radio--advise" for="btn-3">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
         </div>
 
 
         <fieldset class="form__contact">
-          <legend class="form__legend">
-            <div class=" form__greenline">
+          <legend class="form__legend form__greenline">
               <div class="form__container container">
                 <h2 class="form__title">Контактные данные (владельца кота)</h2>
               </div>
-            </div>
           </legend>
           <div class="form__container container">
-            <p class="form__email form__p">
-              E-&nbspmail:*
-              <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
-              <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com
-                required>
-            </p>
-            <p class="form__numb form__p">
-              Телефон:*
-              <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
-              <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90
-                pattern="[0-9]{11}" required>
-            </p>
+            <div class="form__desk-block">
+              <p class="form__email form__p">
+                E-&nbspmail:*
+                <label for="info-email" class="visually-hidden">E-mail (обязательно)</label>
+                <input class="form__nwa form__nwa--email" id="info-email" type="email" name="email" placeholder=kuklachev@gmail.com
+                  required>
+              </p>
+              <p class="form__numb form__p">
+                Телефон:*
+                <label for="info-numb" class="visually-hidden">Телефон (обязательно)</label>
+                <input class="form__nwa form__nwa--numb" id="info-numb" type="tel" name="numb" placeholder=8(960)900-60-90
+                  pattern="[0-9]{11}" required>
+              </p>
+            </div>
           </div>
         </fieldset>
 
 
 
         <fieldset class="form__comment">
-          <legend class="form__legend">
-            <div class="form__greenline">
-              <div class="form__container container">
-                <h2 class="form__title">Комментарий</h2>
-              </div>
+          <legend class="form__legend form__greenline">
+            <div class="form__container container">
+              <h2 class="form__title">Комментарий</h2>
             </div>
-          </legend>
+        </legend>
           <div class="form__container container">
             <textarea class="form__area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
@@ -119,13 +121,11 @@
 
 
         <fieldset class="form__add">
-          <legend class="form__legend">
-            <div class="form__greenline">
-              <div class="form__container container">
-                <h2 class="form__title">Дополнительно</h2>
-              </div>
+          <legend class="form__legend form__greenline">
+            <div class="form__container container">
+              <h2 class="form__title">Дополнительно</h2>
             </div>
-          </legend>
+        </legend>
           <div class="form__container container">
             <div class="form__add-block">
               <input class="checkbox sugar visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
@@ -136,13 +136,15 @@
               <label class="form__checkbox form__checkbox--milk" for="milk">Молоко</label>
               <input class="checkbox vitamin visually-hidden" type="checkbox" name="vitamin" id="vitamin">
               <label class="form__checkbox form__checkbox--vitamin" for="vitamin">Витамины</label>
+              <button class="form__button button" type="submit" value="Отправить заявку">Отправить заявку</button>
+          <p class="form__required">* - Обязательные поля</p>
             </div>
           </div>
         </fieldset>
-        <div class="form__container container">
+        <!-- <div class="form__container container">
           <button class="form__button button" type="submit" value="Отправить заявку">Отправить заявку</button>
           <p class="form__required">* - Обязательные поля</p>
-        </div>
+        </div> -->
       </form>
 
       <!-- </div> -->
