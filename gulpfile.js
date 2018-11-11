@@ -16,6 +16,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var replace = require('gulp-replace');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -31,53 +32,54 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"));
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    // .pipe(imagemin([
+    //   imagemin.optipng({optimizationLevel: 3}),
+    //   imagemin.jpegtran({progressive: true}),
+    //   imagemin.svgo()
+    // ]))
+    .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function() {
+gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"));
 })
 
-gulp.task("sprite", function(){
+gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 })
 
-gulp.task("html", function(){
+gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(posthtml([
-    include()
-  ]))
-  .pipe(gulp.dest("build"));
+    .pipe(replace('<!-- <include src="build/img/sprite.svg"></include> -->', '<include src = "build/img/sprite.svg"></include>'))
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
 })
 
-gulp.task("copy", function(){
+gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
   ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 })
 
 gulp.task("clean", function () {
   return del("build");
- });
+});
 
 gulp.task("server", function () {
   server.init({
