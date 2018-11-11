@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/cart-yandex.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body class="page">
+
   <header class="header">
     <div class="header__container container">
       <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
-      <img class="energy-logo__img-tablet" src="img/logo-tablet.svg" alt="Cat Energy" width="185" height="=70">
-      <img class="energy-logo__img-desktop" src="img/logo-desktop.svg" alt="Cat Energy" width="202" height="=59">
-      <button id="menu-btn" class="main-nav__btn-menu" type="button">
-        <div class="main-nav__btn-indicator"></div>
-      </button>
+      <img class="energy-logo__img-tablet" src="img/logo-tablet.svg" alt="Cat Energy" width="185" height="70">
+      <img class="energy-logo__img-desktop" src="img/logo-desktop.svg" alt="Cat Energy" width="202" height="59">
+      <div class="main-nav__btn-indicator"></div>
       <nav class="header__main-nav main-nav">
-        <ul id="menu-list" class="main-nav__items">
+        <ul id="menu-list" class="main-nav__items .main-nav__items--no-js">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
@@ -32,6 +31,7 @@
         </ul>
       </nav>
     </div>
+
   </header>
   <main class="main">
     <section class="intro">
@@ -40,11 +40,14 @@
         <div class="intro__block">
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__lead">Занялся собой? Займись котом!</p>
-          <img class="intro__img-food" src="img/index-can-mobile@1x.png" width="100%" height="100%" alt="Фотография функциональной еды для кота">
-          <img class="intro__img-food-tablet" src="img/index-can-tablet@1x.jpg" alt="Фотография функциональной еды для кота">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@1x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="intro__img-food" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 2x"
+              alt="Фотография функциональной еды для кота">
+          </picture>
           <a class="intro__link button" href="form.html">Подобрать программу</a>
         </div>
-        <img class="intro__img-food-desktop" src="img/index-can-desktop@1x.png" alt="Фотография функциональной еды для кота">
       </div>
     </section>
     <section class="programs">
@@ -56,14 +59,14 @@
             <p class="program-selection__desc">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
-            <a class="program-selection__link" href="#">Каталог slim</a>
+            <a class="program-selection__link" href="catalog-slim.html">Каталог slim</a>
           </div>
           <div class="program-selection__item program-selection__title--pro">
             <h3 class="program-selection__title">Набор массы</h3>
             <p class="program-selection__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="program-selection__link" href="#">Каталог pro</a>
+            <a class="program-selection__link" href="catalog-pro.html">Каталог pro</a>
           </div>
         </div>
       </div>
@@ -74,7 +77,7 @@
         <ul class="list__block">
           <li class="list__item">
             <div class="list__green-box">
-                <img class="list__img" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="лист">
+              <img class="list__img" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="лист">
             </div>
             <p class="list__text list__text--one">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -113,11 +116,9 @@
           <div class="example__item-block">
             <div class="example__item-stats">
               <p class="example__stats-value example__stats-value--kg">5 кг</p>
-              <!-- <p class="example__stats-mark">Снижение веса</p> -->
             </div>
             <div class="example__item-stats">
               <p class="example__stats-value example__stats-value--date ">60 дней</p>
-              <!-- <p class="example__stats-mark">Затрачено времени</p> -->
             </div>
             <p class="example__price">Затраты на питание:
               15 000 руб.</p>
@@ -126,14 +127,13 @@
               <p class="example__price-desk">15 000 руб.</p>
             </div>
           </div>
-          <!-- <p class="example__price">Затраты на питание: 15 000 руб.</p> -->
         </div>
       </div>
       <div class="example__container-full"></div>
       <div class="example__container container">
         <div class="example__slider">
           <input class="example__slider-input example__input--before" type="radio" id="example-input-before" name="example-story"
-            checked>
+            checked="">
           <input class="example__slider-input example__input--after" type="radio" id="example-input-after" name="example-story">
           <div class="example__slider-img example__slider-img--before"></div>
           <div class="example__slider-img example__slider-img--after"></div>
@@ -161,7 +161,7 @@
       <div class="footer__map" id="map"></div>
     </div>
     <div class="footer__container-bottom--desk"></div>
-    <div class="footer__container footer__container-bottom container ">
+    <div class="footer__container footer__container-bottom container">
       <div class="footer__logo">
       </div>
       <div class="footer__social social">
@@ -186,12 +186,12 @@
         </div>
       </div>
       <div class="social__link-academy">
-        <a class="social__link-academy--text" href="#">
+        <a class="social__link-academy--text" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
-        <a class="social__link-academy--logo" href="#">
+        <a class="social__link-academy--logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="33px" height="45px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-            <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
           </svg>
         </a>
       </div>
@@ -200,6 +200,10 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
   <script src="js/google-cart.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/picturefill.js"></script>
+  <div style="display:none">
+    <!-- <include src="build/img/sprite.svg"></include> -->
+  </div>
 </body>
 
 </html>
