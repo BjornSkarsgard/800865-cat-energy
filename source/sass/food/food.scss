@@ -113,6 +113,8 @@
   position: relative;
   width: 30px;
   height: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .food__plus::before {
@@ -341,6 +343,8 @@
     width: 60px;
     height: 60px;
     margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .food__plus::before {
@@ -546,6 +550,7 @@
     font-size: 16px;
   }
 
+
   .food__table-button {
     position: relative;
     top: -46px;
@@ -566,6 +571,8 @@
 
   .food__plus {
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .food__plus::before {

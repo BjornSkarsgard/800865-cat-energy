@@ -96,8 +96,8 @@
 .example__price {
   width: 100%;
   margin-right: auto;
-  margin-left: auto;
   margin-bottom: 15px;
+  margin-left: auto;
   text-align: center;
   text-transform: uppercase;
 }
@@ -181,16 +181,16 @@
 }
 
 .example__toggle-label {
+  margin-left: 5px;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 5px;
   text-transform: uppercase;
 }
 
 .example__toggle-scale {
   width: 85px;
-  margin-top: -2px;
   height: 14px;
+  margin-top: -2px;
   margin-left: 6px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
@@ -418,10 +418,20 @@
   }
 
   .example__toggle-label {
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
     text-transform: uppercase;
+    border-bottom: dotted 1px rgba($color: #111111, $alpha: 0.23);
+    padding-bottom: 6px;
+  }
+
+  .example__toggle-control:hover .example__toggle-label {
+    border-bottom: solid 1px rgba($color: #111111, $alpha: 0.23);
+  }
+
+  .example__toggle-control:active .example__toggle-label {
+    border-bottom: solid 1px rgba($color: #111111, $alpha: 0);
   }
 
   .example__toggle-scale {
@@ -447,6 +457,22 @@
     transition: left ease-in 0.3s;
   }
 
+  .example__toggle-control:hover .example__toggle-scale:before {
+    box-shadow: 0px 2px 9px 1px #cdcdcd;
+  }
+
+  .example__toggle-control:active .example__toggle-scale::before {
+    box-shadow: 0 0 1px 1px $green-bg;
+  }
+
+  .example__input--after:checked ~ .example__toggle-control:active .example__toggle-scale::before {
+    box-shadow: 0 0 1px 1px $green-bg;
+  }
+
+  .example__input--after:checked ~ .example__toggle-control:hover .example__toggle-scale::before {
+  box-shadow: 0px 2px 9px 1px #cdcdcd;
+  }
+
   .example__input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
     content: "";
     position: absolute;
@@ -461,6 +487,8 @@
     box-shadow: 0 0 1px 1px #cdcdcd;
     transition: left ease-in 0.3s;
   }
+
+
 
   .example__container-full {
     position: absolute;
