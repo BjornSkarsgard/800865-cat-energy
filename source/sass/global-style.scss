@@ -45,14 +45,29 @@ fieldset {
   border: none;
 }
 
-a:active, a:focus { outline: none; }
+a:active,
+a:focus {
+  outline: none;
+}
 
-input, textarea {outline:none;}
-input:active, textarea:active {outline:none;}
-:focus {outline:none;}
-textarea {resize:none;}
-textarea {resize:vertical;}
-textarea {resize:horizontal;}
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
 
 .button {
   display: block;
@@ -70,8 +85,7 @@ textarea {resize:horizontal;}
 .food__button:hover,
 .form__button:hover,
 .sec-goods__button:hover,
-.intro__link:hover
- {
+.intro__link:hover {
   background-color: #5eaa2f;
   transition: background-color ease-in-out 0.3s;
 }
@@ -92,4 +106,3 @@ textarea {resize:horizontal;}
   color: rgba($color: #444444, $alpha: 0.3);
   transition: color ease-in-out 0.3s;
 }
-

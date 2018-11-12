@@ -457,8 +457,8 @@
     transition: left ease-in 0.3s;
   }
 
-  .example__toggle-control:hover .example__toggle-scale:before {
-    box-shadow: 0px 2px 9px 1px #cdcdcd;
+  .example__toggle-control:hover .example__toggle-scale::before {
+    box-shadow: 0 2px 9px 1px #cdcdcd;
   }
 
   .example__toggle-control:active .example__toggle-scale::before {
@@ -470,7 +470,7 @@
   }
 
   .example__input--after:checked ~ .example__toggle-control:hover .example__toggle-scale::before {
-  box-shadow: 0px 2px 9px 1px #cdcdcd;
+    box-shadow: 0 2px 9px 1px #cdcdcd;
   }
 
   .example__input--after:checked ~ .example__toggle-control .example__toggle-scale::before {
@@ -487,8 +487,6 @@
     box-shadow: 0 0 1px 1px #cdcdcd;
     transition: left ease-in 0.3s;
   }
-
-
 
   .example__container-full {
     position: absolute;
