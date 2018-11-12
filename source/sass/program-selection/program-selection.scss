@@ -44,8 +44,18 @@
   position: relative;
   font-size: 16px;
   line-height: 16px;
-
+  color: #111111;
   text-transform: uppercase;
+}
+
+.program-selection__link:active {
+  color: rgba($color: #111111, $alpha: 0.3);
+  transition: color ease-in-out 0.3s;
+}
+
+.program-selection__link:active::after {
+  opacity: 0.3;
+  transition: opacity ease-in-out 0.3s;
 }
 
 .program-selection__link::after {
@@ -60,7 +70,7 @@
 
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.3s;
 }
 
 .program-selection__link:hover::after {
