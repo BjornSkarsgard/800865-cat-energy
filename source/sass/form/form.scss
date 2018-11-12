@@ -282,7 +282,6 @@
 }
 
 .sugar:checked ~ .form__checkbox--sugar::before {
-
   content: "";
   position: absolute;
   top: -4px;
@@ -296,7 +295,6 @@
 }
 
 .water:checked ~ .form__checkbox--water::before {
-
   content: "";
   position: absolute;
   top: -4px;
