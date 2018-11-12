@@ -1,139 +1,134 @@
-.energy-logo__link {
-  opacity: 1;
-  transition: opacity ease-in-out 0.3s;
-}
+@media (min-width:320px) and (max-width: 750px) {
+  .energy-logo__link {
+    opacity: 1;
+    transition: opacity ease-in-out 0.3s;
+  }
 
-.energy-logo__link:hover {
-  opacity: 0.8;
-  transition: opacity ease-in-out 0.3s;
-}
+  .energy-logo__link:hover {
+    opacity: 0.8;
+    transition: opacity ease-in-out 0.3s;
+  }
 
-.energy-logo__link:active {
-  opacity: 0.6;
-  transition: opacity ease-in-out 0.3s;
-}
+  .energy-logo__link:active {
+    opacity: 0.6;
+    transition: opacity ease-in-out 0.3s;
+  }
 
-.energy-logo__img {
-  display: inline;
+  .energy-logo__img {
+    display: inline;
 
-  margin-top: 3.5%;
-  margin-right: 0;
-  margin-bottom: 4%;
-  margin-left: 6.1%;
-}
+    margin-top: 3.5%;
+    margin-right: 0;
+    margin-bottom: 4%;
+    margin-left: 6.1%;
+  }
 
-.energy-logo__img-tablet {
-  display: none;
-}
+  .energy-logo__img-tablet {
+    display: none;
+  }
 
-.energy-logo__img-desktop {
-  display: none;
-}
+  .energy-logo__img-desktop {
+    display: none;
+  }
 
 
-.main-nav__btn-menu {
+  .main-nav__btn-menu {
 
-  display: inline-block;
-  float: right;
+    display: inline-block;
+    float: right;
 
-  width: 20px;
-  height: 20px;
-  margin-top: 6%;
-  margin-right: 25px;
-  background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    margin-top: 6%;
+    margin-right: 25px;
+    background-color: rgb(255, 255, 255);
 
-  border: 0;
+    border: 0;
 
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
 
-.main-nav__btn-indicator {
-  position: absolute;
-  top: 0;
-  right: 0;
+  .main-nav__btn-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
 
-  width: 24px;
-  height: 24px;
-  margin: 7.1% 6.1% 0 0;
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-}
+    width: 24px;
+    height: 24px;
+    margin: 7.1% 6.1% 0 0;
+    background-image: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+  }
 
-.main-nav__btn-indicator--close {
-  position: absolute;
-  top: 0;
-  right: 0;
+  .main-nav__btn-indicator--close {
+    position: absolute;
+    top: 0;
+    right: 0;
 
-  width: 24px;
-  height: 24px;
-  margin: 0;
-  margin-top: 6%;
-  margin-right: 6%;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    margin-top: 6%;
+    margin-right: 6%;
 
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+  }
 
-.main-nav__items {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
+  .main-nav__items {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.main-nav__items--no-js {
-  display: block;
-
-  margin: 0;
-  padding: 0;
-}
-
-.menu-open {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-nav__item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-
-  text-align: center;
-
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.main-nav__link {
-  display: block;
-
-  padding: 7% 10% 7% 10%;
-
-  overflow-wrap: break-word;
-  transition: opacity ease-in-out 0.3s;
-}
-
-.main-nav__link:hover {
-  opacity: 0.6;
-  transition: opacity ease-in-out 0.3s;
-}
-
-.main-nav__link:active {
-  opacity: 0.3;
-  transition: opacity ease-in-out 0.3s;
-}
-
-.main-nav__link--active:hover,
-.main-nav__link--active-green:hover {
-  opacity: 1;
-}
-
-@media (min-width: $tablet-width) {
   .main-nav__items--no-js {
-    display: flex;
+    display: block;
 
     margin: 0;
     padding: 0;
   }
+
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+
+    text-align: center;
+
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .main-nav__link {
+    display: block;
+
+    padding: 7% 10% 7% 10%;
+
+    overflow-wrap: break-word;
+    transition: opacity ease-in-out 0.3s;
+  }
+
+  .main-nav__link:hover {
+    opacity: 0.6;
+    transition: opacity ease-in-out 0.3s;
+  }
+
+  .main-nav__link:active {
+    opacity: 0.3;
+    transition: opacity ease-in-out 0.3s;
+  }
+
+  .main-nav__link--active:hover,
+  .main-nav__link--active-green:hover {
+    opacity: 1;
+  }
+}
+@media (min-width: $tablet-width) {
 
   .energy-logo__img {
     display: none;
@@ -165,6 +160,13 @@
     margin-top: 45px;
     margin-left: 33px;
   }
+
+  // .main-nav__items--no-js {
+  //   display: flex;
+
+  //   margin: 0;
+  //   padding: 0;
+  // }
 
   .main-nav__item {
     position: relative;

@@ -1,9 +1,11 @@
-.no-js {
-  .main-nav__btn-indicator {
-    display: none;
-  }
+@media (min-width:320px) and (max-width: 750px) {
+  .no-js {
+    .main-nav__btn-indicator {
+      display: none;
+    }
 
-  .main-nav__items {
-    display: block;
+    .main-nav__items {
+      display: block;
+    }
   }
 }
