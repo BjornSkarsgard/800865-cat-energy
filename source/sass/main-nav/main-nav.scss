@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 750px) {
   .energy-logo__link {
     opacity: 1;
     transition: opacity ease-in-out 0.3s;
@@ -128,8 +128,8 @@
     opacity: 1;
   }
 }
-@media (min-width: $tablet-width) {
 
+@media (min-width: $tablet-width) {
   .energy-logo__img {
     display: none;
   }
