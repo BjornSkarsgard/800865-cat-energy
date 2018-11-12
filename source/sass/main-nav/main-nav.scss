@@ -82,7 +82,7 @@
 }
 
 .main-nav__items--no-js {
-  display: flex;
+  display: block;
 
   margin: 0;
   padding: 0;
@@ -129,6 +129,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__items--no-js {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+  }
+
   .energy-logo__img {
     display: none;
   }
