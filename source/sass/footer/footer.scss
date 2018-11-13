@@ -72,7 +72,7 @@
   background-color: $grey-bg;
 }
 
-.footer__logo {
+.social__logo-footer {
   display: inline-block;
   width: 129px;
   height: 49px;
@@ -86,12 +86,12 @@
   transition: opasity ease-in-out 0.3s;
 }
 
-.footer__logo:hover {
+.social__logo-footer:hover {
   opacity: 0.8;
   transition: opasity ease-in-out 0.3s;
 }
 
-.footer__logo:active {
+.social__logo-footer:active {
   opacity: 0.6;
   transition: opasity ease-in-out 0.3s;
 }
@@ -165,7 +165,7 @@
   transition: opasity ease-in-out 0.3s;
 }
 
-.social__link-academy--text {
+.social__academy-text {
   font-weight: 400;
   font-size: 16px;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -268,7 +268,7 @@
     background-color: $grey-bg;
   }
 
-  .footer__logo {
+  .social__logo-footer {
     display: inline-block;
     width: 129px;
     height: 48px;
@@ -346,7 +346,7 @@
     margin-left: -1px;
   }
 
-  .social__link-academy--text {
+  .social__academy-text {
     font-weight: 400;
     font-size: 16px;
     font-family: "Arial", "Helvetica", sans-serif;
@@ -354,7 +354,7 @@
     color: #666666;
   }
 
-  .social__link-academy--logo {
+  .social__academy-logo {
     margin-top: -3px;
     margin-left: 16px;
   }
@@ -451,7 +451,7 @@
     height: 396px;
   }
 
-  .footer__container-bottom--desk {
+  .footer__container-desk {
     position: absolute;
     top: 0;
     left: 0;
@@ -473,7 +473,7 @@
     background-color: none;
   }
 
-  .footer__logo {
+  .social__logo-footer {
     display: inline-block;
     width: 129px;
     height: auto;
@@ -551,7 +551,7 @@
     margin-left: -1px;
   }
 
-  .social__link-academy--text {
+  .social__academy-text {
     font-weight: 400;
     font-size: 16px;
     font-family: "Arial", "Helvetica", sans-serif;
@@ -559,7 +559,7 @@
     color: #666666;
   }
 
-  .social__link-academy--logo {
+  .social__academy-logo {
     margin-top: -3px;
     margin-left: 16px;
   }

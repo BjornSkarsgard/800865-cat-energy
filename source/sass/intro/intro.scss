@@ -1,4 +1,4 @@
-.intro-container {
+.intro__container {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -47,7 +47,7 @@
     margin-bottom: 0;
   }
 
-  .intro-container {
+  .intro__container {
     background-image: none;
   }
 
@@ -109,7 +109,7 @@
     background-size: 720px;
   }
 
-  .intro-container {
+  .intro__container {
     display: flex;
   }
 

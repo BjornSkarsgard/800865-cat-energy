@@ -1,20 +1,20 @@
 @media (min-width: 320px) and (max-width: 750px) {
-  .energy-logo__link {
+  .main-nav__logo-link {
     opacity: 1;
     transition: opacity ease-in-out 0.3s;
   }
 
-  .energy-logo__link:hover {
+  .main-nav__logo-link:hover {
     opacity: 0.8;
     transition: opacity ease-in-out 0.3s;
   }
 
-  .energy-logo__link:active {
+  .main-nav__logo-link:active {
     opacity: 0.6;
     transition: opacity ease-in-out 0.3s;
   }
 
-  .energy-logo__img {
+  .main-nav__logo-img {
     display: inline;
 
     margin-top: 3.5%;
@@ -23,11 +23,11 @@
     margin-left: 6.1%;
   }
 
-  .energy-logo__img-tablet {
+  .main-nav__logo-img--tablet {
     display: none;
   }
 
-  .energy-logo__img-desktop {
+  .main-nav__logo-img--desktop {
     display: none;
   }
 
@@ -81,12 +81,12 @@
     padding: 0;
   }
 
-  .main-nav__items--no-js {
-    display: block;
+  // .main-nav__items--no-js {
+  //   display: block;
 
-    margin: 0;
-    padding: 0;
-  }
+  //   margin: 0;
+  //   padding: 0;
+  // }
 
   .menu-open {
     display: flex;
@@ -130,15 +130,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .energy-logo__img {
+  .main-nav__logo-img {
     display: none;
   }
 
-  .energy-logo__img-desktop {
+  .main-nav__logo-img--desktop {
     display: none;
   }
 
-  .energy-logo__img-tablet {
+  .main-nav__logo-img--tablet {
     position: relative;
     display: block;
     width: 170px;
@@ -160,13 +160,6 @@
     margin-top: 45px;
     margin-left: 33px;
   }
-
-  // .main-nav__items--no-js {
-  //   display: flex;
-
-  //   margin: 0;
-  //   padding: 0;
-  // }
 
   .main-nav__item {
     position: relative;
@@ -202,15 +195,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .energy-logo__img {
+  .main-nav__logo-img {
     display: none;
   }
 
-  .energy-logo__img-tablet {
+  .main-nav__logo-img--tablet {
     display: none;
   }
 
-  .energy-logo__img-desktop {
+  .main-nav__logo-img--desktop {
     display: block;
     margin-top: 54px;
     margin-left: 10px;
