@@ -43,10 +43,6 @@
 
   background-color: $grey-bg;
   background-image: url("../img/bg-map-mobile@1x.png");
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/bg-map-mobile@2x.png");
-  //   background-size: 100%;
-  // }
 }
 
 .footer__container-map::before {
@@ -72,14 +68,18 @@
   background-color: $grey-bg;
 }
 
+.social__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 .social__logo-footer {
   display: inline-block;
   width: 129px;
   height: 49px;
   margin-top: 12px;
-  margin-right: 27%;
-  margin-bottom: 0;
-  margin-left: 27%;
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -102,9 +102,9 @@
 
   justify-content: center;
   align-self: center;
-
-  padding: 20px 0 20px 0;
-  margin-top: 3px;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 6px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -150,7 +150,7 @@
 
 .social__link-academy {
   display: flex;
-
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -204,7 +204,8 @@
     width: 140px;
     font-weight: 400;
     font-size: 20px;
-    margin-top: 29px;
+    margin-top: 24px;
+    padding-left: 1px;
     line-height: 25px;
     text-transform: uppercase;
     word-wrap: normal;
@@ -212,7 +213,7 @@
 
   .footer__adress {
     width: 170px;
-    margin-top: 26px;
+    margin-top: 22px;
     margin-right: 2px;
     font-size: 16px;
     line-height: 20px;
@@ -270,35 +271,39 @@
 
   .social__logo-footer {
     display: inline-block;
-    width: 129px;
+    width: 27%;
     height: 48px;
-    margin-top: 13px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    background-image: url("../img/logo-footer.svg");
+    margin-top: 10px;
+    background-image: url(../img/logo-footer.svg);
+    background-size: 130px;
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .footer__social {
     display: flex;
+    width: 100%;
   }
 
   .social__block {
-    margin-right: -12px;
-    margin-left: 10px;
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 32px;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
 
   .social__items {
     display: flex;
     flex-wrap: wrap;
-
+    width: 46%;
     justify-content: center;
     align-self: center;
     margin-top: 6px;
 
-    padding: 0 0 20px 11px;
+    padding: 0 0 12px 0;
     border-top: none;
     border-bottom: none;
   }
@@ -339,10 +344,11 @@
   }
 
   .social__link-academy {
+    width: 27%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: -26px;
+    margin-top: -18px;
     margin-left: -1px;
   }
 
@@ -378,7 +384,7 @@
     margin-left: 0;
     padding-top: 39px;
     padding-right: 74px;
-    padding-left: 76px;
+    padding-left: 75px;
     background-color: white;
   }
 
@@ -473,10 +479,14 @@
     background-color: none;
   }
 
+  .social__block {
+    margin: 0;
+  }
+
   .social__logo-footer {
     display: inline-block;
-    width: 129px;
-    height: auto;
+    width: 27%;
+    height: 57px;
     margin-top: 11px;
     margin-right: 0;
     margin-bottom: 0;
@@ -484,6 +494,7 @@
     background-image: url("../img/logo-footer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 130px;
   }
 
   .footer__social {
@@ -491,19 +502,19 @@
   }
 
   .social__block {
-    margin-right: -12px;
-    margin-left: 10px;
+    margin: 0;
+    margin-bottom: 26px;
   }
 
   .social__items {
     display: flex;
     flex-wrap: wrap;
-
+    width: 46%;
     justify-content: center;
     align-self: center;
     margin-top: 6px;
 
-    padding: 0 0 20px 11px;
+    padding: 0 0 20px 0;
     border-top: none;
     border-bottom: none;
   }
@@ -545,10 +556,11 @@
 
   .social__link-academy {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: -26px;
+    margin-top: -23px;
     margin-left: -1px;
+    margin-right: 1px;
   }
 
   .social__academy-text {
