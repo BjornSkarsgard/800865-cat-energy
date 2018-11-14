@@ -444,6 +444,7 @@
     line-height: 20px;
     text-transform: uppercase;
     border-bottom: dotted 1px rgba($color: #111111, $alpha: 0.23);
+    cursor: pointer;
   }
 
   .example__toggle-control:hover .example__toggle-label {
@@ -475,6 +476,7 @@
     border-radius: 50%;
     box-shadow: 0 0 1px 1px #cdcdcd;
     transition: left ease-in 0.3s;
+    cursor: pointer;
   }
 
   .example__toggle-control:hover .example__toggle-scale::before {
