@@ -24,9 +24,9 @@
 }
 
 .food__table-block {
+  align-self: center;
   width: 50%;
   padding-bottom: 23px;
-  align-self: center;
 }
 
 .food__item {
@@ -46,8 +46,8 @@
 }
 
 .food__table {
-  margin-top: 0;
   width: 102%;
+  margin-top: 0;
 }
 
 
@@ -115,8 +115,8 @@
   position: relative;
   width: 30px;
   height: 30px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .food__plus::before {
@@ -212,10 +212,10 @@
   .food__img-block {
     position: relative;
     top: -47px;
+    left: -62px;
+    align-self: center;
     width: 200px;
     height: 208px;
-    align-self: center;
-    left: -62px;
   }
 
 
@@ -348,9 +348,9 @@
   .food__plus {
     width: 60px;
     height: 60px;
+    margin-right: auto;
     margin-bottom: 35px;
     margin-left: auto;
-    margin-right: auto;
   }
 
   .food__plus::before {
@@ -447,9 +447,9 @@
   .food__img-block {
     position: relative;
     top: -47px;
+    left: 0;
     width: 100%;
     height: 208px;
-    left: 0;
   }
 
   .food__img-block--top {
@@ -575,9 +575,9 @@
   }
 
   .food__plus {
+    margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
-    margin-right: auto;
   }
 
   .food__plus::before {

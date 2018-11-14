@@ -18,8 +18,8 @@
 }
 
 .footer__welcome {
-  margin-left: -1px;
   width: 140px;
+  margin-left: -1px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -72,111 +72,6 @@
   background-color: $grey-bg;
 }
 
-.social__block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.social__logo-footer {
-  display: inline-block;
-  width: 129px;
-  height: 49px;
-  margin-top: 12px;
-  background-image: url("../img/logo-footer.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__logo-footer:hover {
-  opacity: 0.8;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__logo-footer:active {
-  opacity: 0.6;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__items {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  align-self: center;
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 6px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.social__item {
-  display: flex;
-
-  margin-right: 17px;
-  margin-left: 17px;
-}
-
-.social__item:hover {
-  opacity: 0.8;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__item:active {
-  opacity: 0.6;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__link {
-  width: 22px;
-  height: 22px;
-
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.social__link--vk {
-  background-image: url("../img/icon-vk-mobile.svg");
-}
-
-.social__link--inst {
-  background-image: url("../img/icon-insta-mobile.svg");
-  background-size: 16px;
-}
-
-.social__link--fb {
-  background-image: url("../img/icon-fb-mobile.svg");
-  background-position: 0 50%;
-}
-
-.social__link-academy {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social__link-academy:hover {
-  opacity: 0.8;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__link-academy:active {
-  opacity: 0.6;
-  transition: opasity ease-in-out 0.3s;
-}
-
-.social__academy-text {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  margin-left: -2px;
-  color: #666666;
-}
-
 
 @media (min-width: $tablet-width) {
   .footer {
@@ -193,24 +88,24 @@
   }
 
   .footer__card-form {
-    background-color: #f2f2f2;
-    padding-top: 35px;
     height: 100%;
     margin-bottom: 0px;
+    padding-top: 35px;
+    background-color: #f2f2f2;
   }
 
   .footer__card-catalog {
-    background-color: $grey-bg;
     padding-top: 33px;
     padding-bottom: 1px;
+    background-color: $grey-bg;
   }
 
   .footer__welcome {
     width: 140px;
-    font-weight: 400;
-    font-size: 20px;
     margin-top: 24px;
     padding-left: 1px;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
     word-wrap: normal;
@@ -235,9 +130,9 @@
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 0;
-    background-size: cover;
     background-color: $grey-bg;
     background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
@@ -273,102 +168,6 @@
     padding-top: 51px;
     background-color: $grey-bg;
   }
-
-  .social__logo-footer {
-    display: inline-block;
-    width: 27%;
-    height: 48px;
-    margin-top: 10px;
-    background-image: url(../img/logo-footer.svg);
-    background-size: 130px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  .footer__social {
-    display: flex;
-    width: 100%;
-  }
-
-  .social__block {
-    display: flex;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 32px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-
-  .social__items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 46%;
-    justify-content: center;
-    align-self: center;
-    margin-top: 6px;
-
-    padding: 0 0 12px 0;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  .social__item {
-    display: flex;
-
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .social__link {
-    width: 32px;
-    height: 32px;
-
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  .social__link--vk {
-    background-image: url("../img/icon-vk.svg");
-    background-size: 33px;
-  }
-
-  .social__link--inst {
-    margin-top: 1px;
-    margin-left: 2px;
-    background-image: url("../img/icon-insta.svg");
-    background-size: 23px;
-  }
-
-  .social__link--fb {
-    margin-top: 1px;
-    margin-left: 4px;
-    background-image: url("../img/icon-fb.svg");
-    background-position: 0 50%;
-    background-size: 15px;
-  }
-
-  .social__link-academy {
-    width: 27%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: -18px;
-    margin-left: -1px;
-  }
-
-  .social__academy-text {
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Arial", "Helvetica", sans-serif;
-
-    color: #666666;
-  }
-
-  .social__academy-logo {
-    margin-top: -3px;
-    margin-left: 16px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -394,19 +193,19 @@
   }
 
   .footer__card-form {
-    padding-top: 0;
     margin-bottom: -3px;
+    padding-top: 0;
   }
 
   .footer__card-catalog {
-    background-color: $grey-bg;
     padding-top: 0;
+    background-color: $grey-bg;
   }
 
   .footer__welcome {
     width: 140px;
-    margin-bottom: 60px;
     margin-top: 26px;
+    margin-bottom: 60px;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
@@ -435,9 +234,9 @@
     margin-bottom: 0;
     margin-left: auto;
     padding-bottom: 0;
-    background-size: cover;
     background-color: $grey-bg;
     background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
@@ -479,105 +278,8 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 55px;
-    padding-left: 7.6%;
     padding-right: 7.6%;
+    padding-left: 7.6%;
     background-color: none;
-  }
-
-  .social__block {
-    margin: 0;
-  }
-
-  .social__logo-footer {
-    display: inline-block;
-    width: 27%;
-    height: 57px;
-    margin-top: 11px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    background-image: url("../img/logo-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 130px;
-  }
-
-  .footer__social {
-    display: flex;
-  }
-
-  .social__block {
-    margin: 0;
-    margin-bottom: 26px;
-  }
-
-  .social__items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 46%;
-    justify-content: center;
-    align-self: center;
-    margin-top: 6px;
-
-    padding: 0 0 20px 0;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  .social__item {
-    display: flex;
-
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .social__link {
-    width: 32px;
-    height: 32px;
-
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  .social__link--vk {
-    background-image: url("../img/icon-vk.svg");
-    background-size: 33px;
-  }
-
-  .social__link--inst {
-    margin-top: 1px;
-    margin-left: 2px;
-    background-image: url("../img/icon-insta.svg");
-    background-size: 23px;
-  }
-
-  .social__link--fb {
-    margin-top: 1px;
-    margin-left: 4px;
-    background-image: url("../img/icon-fb.svg");
-    background-position: 0 50%;
-    background-size: 15px;
-  }
-
-  .social__link-academy {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: -23px;
-    margin-left: -1px;
-    margin-right: 1px;
-  }
-
-  .social__academy-text {
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Arial", "Helvetica", sans-serif;
-
-    color: #666666;
-  }
-
-  .social__academy-logo {
-    margin-top: -3px;
-    margin-left: 16px;
   }
 }

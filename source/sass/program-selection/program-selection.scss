@@ -1,12 +1,8 @@
-.programs {
-  margin-bottom: 1px;
-}
-
 .program-selection {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 
 .program-selection__item {
@@ -237,7 +233,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1220px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     padding: 0;
   }
 

@@ -1,3 +1,11 @@
+.main-nav__container {
+  position: relative;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
 @media (min-width: 320px) and (max-width: 750px) {
   .main-nav__logo-link {
     opacity: 1;
@@ -123,6 +131,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 30px 0 30px;
+  }
+
   .main-nav__logo-img {
     display: none;
   }

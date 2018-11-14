@@ -365,9 +365,9 @@
 
 .form__legend {
   position: relative;
+  width: 100%;
   padding: 0;
   overflow: hidden;
-  width: 100%;
 }
 
 .form__greenline::before {
@@ -782,9 +782,9 @@
 
   .form__title {
     display: inline-block;
+    margin-top: 0;
     margin-bottom: 10px;
     margin-left: -38px;
-    margin-top: 0;
     padding: 0 41px 0 37px;
     font-weight: 400;
     font-size: 36px;
@@ -825,9 +825,9 @@
     position: relative;
     display: block;
     width: 70%;
-    padding-left: 18px;
     margin-bottom: 24px;
     margin-left: 43px;
+    padding-left: 18px;
   }
 
   .form__radio::after {
@@ -908,8 +908,8 @@
     width: 100%;
     min-height: 174px;
     margin-top: 65px;
-    margin-left: 0;
     margin-bottom: 67px;
+    margin-left: 0;
     padding: 14px 18px;
     font-size: 20px;
     line-height: 20px;
@@ -929,11 +929,11 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 55px;
-    margin-bottom: 3px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    margin-top: 55px;
+    margin-bottom: 3px;
     padding-left: 0;
   }
 
@@ -1030,9 +1030,9 @@
   }
 
   .form__required {
-    margin-top: 43px;
     align-self: center;
     width: 34.4%;
+    margin-top: 43px;
     margin-left: 0;
     font-size: 16px;
     line-height: 16px;
