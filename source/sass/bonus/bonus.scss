@@ -1,5 +1,5 @@
 .bonus {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .bonus__image {
@@ -23,8 +23,8 @@
 
 .bonus__gift {
   position: absolute;
-  top: 26%;
-  left: 39%;
+  top: 26.2%;
+  left: 38.4%;
   width: 65px;
   height: 60px;
 
@@ -32,10 +32,10 @@
 }
 
 .bonus__title {
-  padding-top: 188px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-size: 16px;
+  padding-top: 186px;
+  padding-right: 59px;
+  padding-left: 57px;
+  font-size: 15px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
 
@@ -47,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .bonus {
-    margin-bottom: 72px;
+    margin-bottom: 77px;
   }
 
   .bonus__image {
@@ -88,17 +88,16 @@
   }
 
   .bonus__title {
-    width: 170px;
-    margin: 0;
-    margin-right: 53px;
+    width: 220px;
+    margin: 0 0px 0px 0px;
     padding-top: 7px;
-    padding-right: 0;
-    padding-left: 0;
-    font-size: 16px;
+    padding-right: 15px;
+    padding-left: 21px;
+    font-size: 15px;
     line-height: 20px;
-    font-family: "Arial", "Helvetica", sans-serif;
-    text-align: center;
-    color: white;
+    font-family: "Arial","Helvetica",sans-serif;
+    text-align: left;
+    color: #fff;
   }
 }
 
@@ -146,12 +145,12 @@
   }
 
   .bonus__title {
-    width: 170px;
+    width: 174px;
     margin: 178px auto 0;
     padding-top: 7px;
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     font-family: "Arial", "Helvetica", sans-serif;
     text-align: center;

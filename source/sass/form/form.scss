@@ -47,7 +47,7 @@
 .form__nwa {
   width: 100%;
   margin-left: 13px;
-  padding: 11px 13px 12px;
+  padding: 11px 16px 12px;
   font-size: 16px;
   font-family: "Oswald", "arial", serif;
   color: #444444;
@@ -367,6 +367,7 @@
   position: relative;
   padding: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 .form__greenline::before {
@@ -1029,6 +1030,8 @@
   }
 
   .form__required {
+    margin-top: 43px;
+    align-self: center;
     width: 34.4%;
     margin-left: 0;
     font-size: 16px;

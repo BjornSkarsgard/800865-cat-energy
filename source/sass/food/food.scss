@@ -20,10 +20,13 @@
 
 .food__img {
   width: 100%;
+  max-width: 170px;
 }
 
 .food__table-block {
   width: 50%;
+  padding-bottom: 23px;
+  align-self: center;
 }
 
 .food__item {
@@ -44,7 +47,7 @@
 
 .food__table {
   margin-top: 0;
-  width: 100%;
+  width: 102%;
 }
 
 
@@ -209,8 +212,10 @@
   .food__img-block {
     position: relative;
     top: -47px;
-    width: 100%;
+    width: 200px;
     height: 208px;
+    align-self: center;
+    left: -62px;
   }
 
 
@@ -218,7 +223,7 @@
     position: relative;
     top: -46px;
     width: 100%;
-    padding: 0 37px 0 37px;
+    padding: 0 34px 0 34px;
   }
 
 
@@ -230,6 +235,8 @@
   .food__img {
     position: relative;
     top: 0;
+    width: 324px;
+    max-width: none;
   }
 
   .food__img-big {
@@ -265,9 +272,9 @@
 
   .food__wt {
     padding: 0;
-    padding-top: 6px;
+    padding-top: 5px;
     padding-right: 57px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -312,7 +319,7 @@
 
   .food__button {
     width: 100%;
-    margin-top: 34px;
+    margin-top: 33px;
     margin-bottom: -5px;
     padding: 4% 25% 4% 25%;
     font-size: 16px;
@@ -442,6 +449,7 @@
     top: -47px;
     width: 100%;
     height: 208px;
+    left: 0;
   }
 
   .food__img-block--top {
@@ -452,6 +460,7 @@
   .food__img {
     position: relative;
     top: -35px;
+    width: 245px;
   }
 
   .food__table-block {
@@ -470,7 +479,7 @@
   .food__title {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     padding: 0 0 0 0;
     padding-bottom: 0;
     font-weight: 400;
@@ -494,10 +503,7 @@
   }
 
   .food__wt {
-    padding: 0;
-    padding-top: 6px;
-    padding-right: 57px;
-    padding-bottom: 6px;
+    padding: 6px 58px 7px 0;
     border-bottom: 1px solid #cdcdcd;
   }
 
