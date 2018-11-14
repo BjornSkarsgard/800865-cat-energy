@@ -90,7 +90,10 @@
 .food__button {
   width: 100%;
   margin-top: -2px;
-  padding: 4% 25% 3% 25%;
+  padding-top: 4%;
+  padding-right: 25%;
+  padding-bottom: 3%;
+  padding-left: 25%;
   font-size: 16px;
   line-height: 20px;
 }
@@ -223,7 +226,10 @@
     position: relative;
     top: -46px;
     width: 100%;
-    padding: 0 34px 0 34px;
+    padding-top: 0;
+    padding-right: 34px;
+    padding-bottom: 0;
+    padding-left: 35px;
   }
 
 
@@ -248,8 +254,11 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 20px;
-    padding: 0 20% 0 20%;
+    padding-top: 0;
+    padding-right: 20%;
     padding-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -321,7 +330,10 @@
     width: 100%;
     margin-top: 33px;
     margin-bottom: -5px;
-    padding: 4% 25% 4% 25%;
+    padding-top: 4%;
+    padding-right: 25%;
+    padding-bottom: 4%;
+    padding-left: 25%;
     font-size: 16px;
     line-height: 20px;
   }
@@ -330,7 +342,10 @@
     position: relative;
     top: -46px;
     width: 100%;
-    padding: 0 37px 0 37px;
+    padding-top: 0;
+    padding-right: 37px;
+    padding-bottom: 0;
+    padding-left: 37px;
   }
 
   .food__see-more {
@@ -339,8 +354,10 @@
     height: 430px;
     margin: 0;
     margin-top: 117px;
-    padding: 0 38px 0 38px;
     padding-top: 69px;
+    padding-right: 38px;
+    padding-bottom: 0;
+    padding-left: 38px;
     border: 1px solid #f2f2f2;
     cursor: pointer;
   }
@@ -384,7 +401,10 @@
     margin-top: 0;
     margin-bottom: 7px;
     margin-left: 0;
-    padding: 0 52px 19px 52px;
+    padding-top: 0;
+    padding-right: 52px;
+    padding-bottom: 19px;
+    padding-left: 52px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -394,7 +414,10 @@
   .food__title-desc {
     margin-top: 0;
     margin-bottom: 86px;
-    padding: 0 12px 0 12px;
+    padding-top: 0;
+    padding-right: 12px;
+    padding-bottom: 0;
+    padding-left: 12px;
     font-size: 16px;
     font-family: "Arial", "Helvetica", sans-serif;
     text-align: center;
@@ -467,7 +490,10 @@
     position: relative;
     top: -46px;
     width: 100%;
-    padding: 0 37px 0 37px;
+    padding-top: 0;
+    padding-right: 37px;
+    padding-bottom: 0;
+    padding-left: 37px;
   }
 
 
@@ -480,8 +506,7 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 19px;
-    padding: 0 0 0 0;
-    padding-bottom: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -503,7 +528,10 @@
   }
 
   .food__wt {
-    padding: 6px 58px 7px 0;
+    padding-top: 6px;
+    padding-right: 58px;
+    padding-bottom: 7px;
+    padding-left: 0;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -551,7 +579,10 @@
     margin-top: 33px;
     margin-bottom: -5px;
     margin-left: 1px;
-    padding: 6.3% 25% 5.2% 26%;
+    padding-top: 6.3%;
+    padding-right: 25%;
+    padding-bottom: 5.2%;
+    padding-left: 26%;
     font-size: 16px;
   }
 
@@ -560,7 +591,9 @@
     position: relative;
     top: -46px;
     width: 100%;
-    padding: 0 37px 0 37px;
+    padding: 0;
+    padding-right: 37px;
+    padding-left: 37px;
   }
 
   .food__see-more {
@@ -569,7 +602,10 @@
     height: 430px;
     margin: 0;
     margin-top: 117px;
-    padding: 65px 38px 0 38px;
+    padding-top: 65px;
+    padding-right: 38px;
+    padding-bottom: 0;
+    padding-left: 38px;
     border: 1px solid #f2f2f2;
     cursor: pointer;
   }
@@ -632,7 +668,10 @@
 
     display: block;
     width: 100%;
-    padding: 6% 20% 6% 21%;
+    padding-top: 6%;
+    padding-right: 20%;
+    padding-bottom: 6%;
+    padding-left: 21%;
     font-size: 16px;
     line-height: 20px;
     font-family: "Oswald", "Helvetica", sans-serif;

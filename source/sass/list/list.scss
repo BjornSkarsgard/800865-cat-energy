@@ -1,5 +1,9 @@
 .list {
   margin: -3px 0 40px 0;
+  margin-top: -3px;
+  margin-right: 0;
+  margin-bottom: 40px;
+  margin-left: 0;
 }
 
 .list__block {
@@ -47,7 +51,8 @@
 .list__text {
 
   width: 200px;
-  margin: 2px 0 0 0;
+  margin: 0;
+  margin-top: 2px;
   font-family: "Arial", "Helvetica", sans-serif;
 
   color: #444444;
@@ -55,7 +60,8 @@
 
 @media (min-width: $tablet-width) {
   .list {
-    margin: 15px 0 0 0;
+    margin: 0;
+    margin-top: 15px;
     padding-bottom: 5px;
     border-bottom: 2px solid $grey-bg;
   }
@@ -105,7 +111,8 @@
 
   .list__text {
     width: 250px;
-    margin: 2px 0 0 0;
+    margin: 0;
+    margin-top: 2px;
     font-size: 16px;
     line-height: 24px;
     font-family: "Arial", "Helvetica", sans-serif;
@@ -215,7 +222,8 @@
 
   .list__text {
     width: 250px;
-    margin: 2px 0 0 0;
+    margin: 0;
+    margin-top: 2px;
     font-size: 16px;
     line-height: 24px;
     font-family: "Arial", "Helvetica", sans-serif;

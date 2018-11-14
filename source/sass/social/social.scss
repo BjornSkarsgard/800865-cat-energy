@@ -34,7 +34,9 @@
   align-self: center;
   width: 100%;
   margin-top: 6px;
-  padding: 20px 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -137,8 +139,8 @@
     align-self: center;
     width: 46%;
     margin-top: 6px;
-
-    padding: 0 0 12px 0;
+    padding: 0;
+    padding-bottom: 12px;
     border-top: none;
     border-bottom: none;
   }
@@ -237,7 +239,8 @@
     width: 46%;
     margin-top: 6px;
 
-    padding: 0 0 20px 0;
+    padding: 0;
+    padding-bottom: 20px;
     border-top: none;
     border-bottom: none;
   }
