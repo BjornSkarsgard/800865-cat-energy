@@ -111,7 +111,7 @@
     width: 27%;
     height: 48px;
     margin-top: 10px;
-    background-image: url(../img/logo-footer.svg);
+    background-image: url("../img/logo-footer.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 130px;
@@ -206,6 +206,7 @@
 @media (min-width: $desktop-width) {
   .social__block {
     margin: 0;
+    margin-bottom: 26px;
   }
 
   .social__logo-footer {
@@ -224,11 +225,6 @@
 
   .footer__social {
     display: flex;
-  }
-
-  .social__block {
-    margin: 0;
-    margin-bottom: 26px;
   }
 
   .social__items {

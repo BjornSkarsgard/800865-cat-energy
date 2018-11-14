@@ -14,7 +14,7 @@
 }
 
 .footer__card-form {
-  margin-bottom: 3px;
+  padding-bottom: 3px;
 }
 
 .footer__welcome {
@@ -69,6 +69,7 @@
 
 .footer__container-bottom {
   padding-top: 25px;
+  padding-bottom: 22px;
   background-color: $grey-bg;
 }
 
@@ -89,7 +90,8 @@
 
   .footer__card-form {
     height: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     padding-top: 35px;
     background-color: #f2f2f2;
   }
