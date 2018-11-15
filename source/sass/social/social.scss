@@ -58,6 +58,10 @@
   transition: opasity ease-in-out 0.3s;
 }
 
+.social__item:active .social__svg {
+  fill: $green-bg;
+}
+
 .social__link {
   width: 22px;
   height: 22px;
@@ -67,29 +71,29 @@
 }
 
 .social__item--vk {
-  margin-right: 37px;
+  margin-right: 38px;
   margin-top: 5px;
 }
 
-.social__link--vk {
+.social__svg--vk {
   width: 23px;
 }
 
 .social__item--inst {
   margin-top: 1px;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
-.social__link--inst {
+.social__svg--inst {
   width: 17px;
 }
 
 .social__item--fb {
   margin-bottom: 1px;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
-.social__link--fb {
+.social__svg--fb {
   width: 10px;
 }
 
@@ -174,33 +178,33 @@
   }
 
   .social__item--vk {
-    margin-right: 15px;
+    margin-right: 18px;
     margin-top: 5px;
   }
 
-  .social__link--vk {
-    width: 31px;
+  .social__svg--vk {
+    width: 35px;
     margin-top: 5px;
   }
 
   .social__item--inst {
     margin-top: 1px;
-    margin-right: 19px;
+    margin-right: 10px;
   }
 
-  .social__link--inst {
+  .social__svg--inst {
     width: 24px;
-    margin-top: 3px;
+    margin-top: 6px;
   }
 
   .social__item--fb {
     margin-bottom: 1px;
-    margin-right: 27px;
+    margin-right: 10px;
   }
 
-  .social__link--fb {
+  .social__svg--fb {
     width: 14px;
-    margin-top: 2px;
+    margin-top: 4px;
   }
 
   .social__link-academy {
@@ -280,33 +284,33 @@
   }
 
   .social__item--vk {
-    margin-right: 15px;
+    margin-right: 16px;
     margin-top: 5px;
   }
 
-  .social__link--vk {
-    width: 31px;
+  .social__svg--vk {
+    width: 32px;
     margin-top: 5px;
   }
 
   .social__item--inst {
-    margin-top: 1px;
-    margin-right: 19px;
+    margin-top: 3px;
+    margin-right: 11px;
   }
 
-  .social__link--inst {
-    width: 24px;
-    margin-top: 3px;
+  .social__svg--inst {
+    width: 25px;
+    margin-top: 4px;
   }
 
   .social__item--fb {
     margin-bottom: 1px;
-    margin-right: 26px;
+    margin-right: 9px;
   }
 
-  .social__link--fb {
+  .social__svg--fb {
     width: 14px;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .social__link-academy {
